@@ -14,4 +14,4 @@ because of lack of open sourse protocal, i'd allow and welcome any individual to
 
 anyway, donation will be deep appreciated!
 
-！[支付宝]()
+![支付宝]()
