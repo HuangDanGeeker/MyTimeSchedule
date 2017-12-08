@@ -13,13 +13,13 @@ HoverWidget::HoverWidget(QWidget *parent) :
     this->setAttribute(Qt::WA_TranslucentBackground, true);
 
     QDesktopWidget* desktopWidget = QApplication::desktop();
-    int imageWidth = desktopWidget->width()*0.07;
-    int imageheight = desktopWidget->height()*0.07;
+    desktopWidth = desktopWidget->width();
+    desktopHeight = desktopWidget->height();
 
     QImage image;
     image.load("E:\\QtLearn\\TimeSchedule\\TimeSchedule\\res\\imgs\\haimian.jpg");
 
-    ui->label->setPixmap(QPixmap::fromImage(image.scaled(imageWidth, imageheight, Qt::KeepAspectRatio)));
+    ui->label->setPixmap(QPixmap::fromImage(image.scaled(desktopWidth*0.07, desktopHeight*0.07, Qt::KeepAspectRatio)));
     ui->label->resize(image.size());
 
     ui->label->show();
@@ -32,34 +32,41 @@ HoverWidget::~HoverWidget()
     delete ui;
 }
 
+void HoverWidget::exit(){
+    this->close();
+}
+
+//将主界面显示或隐藏
+void HoverWidget::displayMainWindow(){
+    this->mainWindow->isHidden() ? this->mainWindow->show() : this->mainWindow->hide();
+}
+
 
 void HoverWidget::mouseMoveEvent(QMouseEvent *event){
     this->move(relativePoint + event->globalPos());
-
+    if(this->pos().x() >= desktopWidth - 20){
+        this->move(desktopWidth/2, this->pos().y());
+    }
+    if(this->pos().y() >= desktopHeight - 20){
+        this->move(this->pos().x(), desktopHeight/2);
+    }
 }
 
 void HoverWidget::mousePressEvent(QMouseEvent * event){
     if(event->button() == Qt::LeftButton){
         relativePoint = this->pos() - event->globalPos();
     }else if(event->button() == Qt::RightButton){
-//        menue.exec(event->globalPos());
-//            menue.exec(this->pos() - event->globalPos());
-            qDebug()<<this->pos().x() <<" " <<this->pos().y();
-            qDebug()<<event->pos().x();
-            qDebug()<<event->globalPos().x();
 
-//        menue.show();
     }
 }
 void HoverWidget::mouseDoubleClickEvent(QMouseEvent *event){
-    this->mainWindow->isHidden() ? this->mainWindow->show() : this->mainWindow->hide();
-
+    displayMainWindow();
 }
 
 void HoverWidget::contextMenuEvent(QContextMenuEvent *event){
-//    menue.exec(event->pos());
-//    menue.show();
-//    event->accept();
+    menue.move(event->globalPos());
+    menue.show();
+    event->accept();
 }
 
 void HoverWidget::createMenue(){
@@ -69,8 +76,9 @@ void HoverWidget::createMenue(){
     QAction *exitAction = new QAction(this);
     exitAction->setText("exit");
 
-    connect(showOrHideMainWndwAction, SIGNAL(toggled(bool)), this, SLOT());
-    connect(exitAction, SIGNAL(toggled(bool)), this, SLOT());
+    connect(showOrHideMainWndwAction, SIGNAL(triggered(bool)), this, SLOT(displayMainWindow()));
+
+    connect(exitAction, SIGNAL(triggered(bool)), this, SLOT(exit()));
 
     menue.addAction(showOrHideMainWndwAction);
     menue.addAction(exitAction);

@@ -18,11 +18,17 @@ public:
     explicit HoverWidget(QWidget *parent = 0);
     ~HoverWidget();
     void setMainWindow(MainWindow *mainWindow);
+    int desktopWidth;
+    int desktopHeight;
 private:
     Ui::HoverWidget *ui;
     QPoint relativePoint;
     MainWindow *mainWindow;
+    QApplication *application;
     QMenu menue;
+private slots:
+    void exit();
+    void displayMainWindow();
 protected:
     //event
     void mouseMoveEvent(QMouseEvent * event);

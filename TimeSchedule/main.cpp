@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 //    w.show();
 
     HoverWidget h;
-    h.setMainWindow(&w);
+    h.setMainWindow( &w);
     h.show();
     return a.exec();
 }

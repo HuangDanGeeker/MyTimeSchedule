@@ -405,6 +405,11 @@ release\moc_hoverwidget.cpp: F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWi
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmainwindow.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtabwidget.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qicon.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenu \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenu.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qaction.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qactiongroup.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QAction \
 		..\TimeSchedule\hoverwidget.h \
 		release\moc_predefs.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe
@@ -549,7 +554,12 @@ release\main.obj: ..\TimeSchedule\main.cpp ../TimeSchedule/mainwindow.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qinputmethod.h \
 		../TimeSchedule/hoverwidget.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QMouseEvent
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QMouseEvent \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenu \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenu.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qaction.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qactiongroup.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QAction
 
 release\mainwindow.obj: ..\TimeSchedule\mainwindow.cpp ../TimeSchedule/mainwindow.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMainWindow \
@@ -804,11 +814,13 @@ release\hoverwidget.obj: ..\TimeSchedule\hoverwidget.cpp ../TimeSchedule/hoverwi
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmainwindow.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtabwidget.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qicon.h \
-		ui_hoverwidget.h \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QVariant \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QAction \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenu \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenu.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qaction.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qactiongroup.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QAction \
+		ui_hoverwidget.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QVariant \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QApplication \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qapplication.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qcoreapplication.h \
