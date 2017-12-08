@@ -1,1 +1,8 @@
-<RCC/>
+<RCC>
+    <qresource prefix="/imgs">
+        <file>res/imgs/haimian.jpg</file>
+        <file>res/imgs/img.jpg</file>
+        <file>res/imgs/icon.jpg</file>
+        <file>res/imgs/icon.ico</file>
+    </qresource>
+</RCC>

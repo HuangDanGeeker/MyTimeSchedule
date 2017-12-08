@@ -32,3 +32,8 @@ HEADERS  += mainwindow.h \
 
 FORMS    += mainwindow.ui \
     hoverwidget.ui
+
+RESOURCES += \
+    res.qrc
+
+RC_ICONS = ./res/imgs/icon.ico
