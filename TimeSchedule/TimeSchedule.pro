@@ -25,10 +25,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    hoverwidget.cpp
+    hoverwidget.cpp \
+    processbardelegate.cpp
 
 HEADERS  += mainwindow.h \
-    hoverwidget.h
+    hoverwidget.h \
+    processbardelegate.h
+
 
 FORMS    += mainwindow.ui \
     hoverwidget.ui
