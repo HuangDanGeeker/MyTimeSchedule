@@ -18,6 +18,7 @@
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
+#include <QtWidgets/QTableView>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 
@@ -29,6 +30,7 @@ public:
     QWidget *centralWidget;
     QTabWidget *tabWidget;
     QWidget *tab;
+    QTableView *ScheduleView;
     QWidget *tab_2;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
@@ -46,6 +48,9 @@ public:
         tabWidget->setGeometry(QRect(0, 10, 671, 321));
         tab = new QWidget();
         tab->setObjectName(QStringLiteral("tab"));
+        ScheduleView = new QTableView(tab);
+        ScheduleView->setObjectName(QStringLiteral("ScheduleView"));
+        ScheduleView->setGeometry(QRect(0, 30, 671, 241));
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));

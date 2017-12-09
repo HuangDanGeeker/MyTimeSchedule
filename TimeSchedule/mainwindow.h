@@ -17,6 +17,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    void initScheduleCalendar();
 };
 
 #endif // MAINWINDOW_H

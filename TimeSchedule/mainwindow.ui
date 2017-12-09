@@ -27,6 +27,16 @@
      <attribute name="title">
       <string>Tab 1</string>
      </attribute>
+     <widget class="QTableView" name="ScheduleView">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>671</width>
+        <height>241</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
