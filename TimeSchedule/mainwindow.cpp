@@ -25,5 +25,10 @@ void MainWindow::initScheduleCalendar(){
     model->setHorizontalHeaderLabels(horizentalHeaderList);
 
     ui->ScheduleView->setModel(model);
-    ui->ScheduleView->verticalHeader()->show();
+
+}
+
+void MainWindow::closeEvent(QCloseEvent *e){
+    e->ignore();
+    this->hide();
 }

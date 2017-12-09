@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include <QCloseEvent>
 namespace Ui {
 class MainWindow;
 }
@@ -18,6 +18,8 @@ public:
 private:
     Ui::MainWindow *ui;
     void initScheduleCalendar();
+    void closeEvent(QCloseEvent *e);
+
 };
 
 #endif // MAINWINDOW_H
