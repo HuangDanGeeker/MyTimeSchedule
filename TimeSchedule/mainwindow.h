@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include <QCloseEvent>
+#include <qdebug.h>
+#include <datastructs.h>
 namespace Ui {
 class MainWindow;
 }
@@ -19,6 +21,21 @@ private:
     Ui::MainWindow *ui;
     void initScheduleCalendar();
     void closeEvent(QCloseEvent *e);
+    MISSION getScheduleItem(int rowNum);
+    int currentRowNum;
+signals:
+    void MissionUpdate(PMISSION mission);
+    void MissionUpdate(int rowNum, PMISSION mission);
+    void MissionUpdateAll(MISSION missions[], int len);
+    void MissionDelete(int rowNum);
+private slots:
+    void addMission();
+    void addMission(PMISSION mission);
+    void addMission(QString title, QString remarks, QString startDate, QString endDate, QString infromTime, QString achievePercence);
+    void deleteMission();
+    void updateMission();
+    void updateMission(PMISSION mission);
+    void updateAllMission();
 
 };
 

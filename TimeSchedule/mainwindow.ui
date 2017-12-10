@@ -23,6 +23,9 @@
       <height>321</height>
      </rect>
     </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
       <string>Tab 1</string>
@@ -31,10 +34,62 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>30</y>
-        <width>671</width>
-        <height>241</height>
+        <y>40</y>
+        <width>651</width>
+        <height>231</height>
        </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addMissionBtn">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>10</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>添加</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="deleteMissionBtn">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>10</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>删除</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="updateMissionBtn">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>10</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>更新</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="updateAllBtn">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>10</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>更新全部</string>
       </property>
      </widget>
     </widget>
