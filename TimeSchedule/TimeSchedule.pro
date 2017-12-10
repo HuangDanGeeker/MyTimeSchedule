@@ -26,11 +26,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += main.cpp\
         mainwindow.cpp \
     hoverwidget.cpp \
-    processbardelegate.cpp
+    processbardelegate.cpp \
+    dateeditdelegate.cpp \
+    timeeditdelegate.cpp
 
 HEADERS  += mainwindow.h \
     hoverwidget.h \
-    processbardelegate.h
+    processbardelegate.h \
+    dateeditdelegate.h \
+    timeeditdelegate.h
 
 
 FORMS    += mainwindow.ui \
