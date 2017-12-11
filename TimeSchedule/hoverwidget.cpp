@@ -89,3 +89,6 @@ void HoverWidget::createMenue(){
 void HoverWidget::setMainWindow(MainWindow *mainWindow){
     this->mainWindow = mainWindow;
 }
+void HoverWidget::setTimeClock(TimeClock *timeClock){
+    this->timeClock = timeClock;
+}

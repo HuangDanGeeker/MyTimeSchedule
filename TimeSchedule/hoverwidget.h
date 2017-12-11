@@ -6,6 +6,7 @@
 #include <mainwindow.h>
 #include <QMenu>
 #include <QAction>
+#include <timeclock.h>
 namespace Ui {
 class HoverWidget;
 }
@@ -18,12 +19,14 @@ public:
     explicit HoverWidget(QWidget *parent = 0);
     ~HoverWidget();
     void setMainWindow(MainWindow *mainWindow);
+    void setTimeClock(TimeClock *timeClock);
     int desktopWidth;
     int desktopHeight;
 private:
     Ui::HoverWidget *ui;
     QPoint relativePoint;
     MainWindow *mainWindow;
+    TimeClock *timeClock;
     QApplication *application;
     QMenu menue;
 private slots:

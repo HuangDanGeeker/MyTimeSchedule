@@ -1,16 +1,16 @@
 #include "mainwindow.h"
 #include <QApplication>
 #include <hoverwidget.h>
-#include <datastructs.h>
+#include <timeclock.h>
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     a.setWindowIcon(QIcon(":/imgs/res/imgs/icon.ico"));
-    MainWindow w;
-    w.show();
-
-//    HoverWidget h;
-//    h.setMainWindow( &w);
-//    h.show();
+    MainWindow mainWindow;
+    TimeClock timeClock(&mainWindow);
+    HoverWidget h;
+    h.setMainWindow(&mainWindow);
+    h.setTimeClock(&timeClock);
+    h.show();
     return a.exec();
 }

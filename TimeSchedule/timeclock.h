@@ -2,11 +2,28 @@
 #define TIMECLOCK_H
 
 #include <QObject>
-
-class TimeClock
+#include <datastructs.h>
+#include <QTimer>
+#include <mainwindow.h>
+#include <QTime>
+class TimeClock : public QObject
 {
+    Q_OBJECT
 public:
-    TimeClock();
+    explicit TimeClock(MainWindow *mainWindow, QObject * parent = 0);
+
+private:
+    QTimer timer;
+    QList<MISSION> misssions;
+    MainWindow * mainWindow;
+    void setMainWindow(MainWindow *);
+
+private slots:
+    void MissionUpdate(PMISSION mission);
+    void MissionUpdate(int rowNum, PMISSION mission);
+    void MissionUpdateAll(MISSION missions[], int len);
+    void MissionDelete(int rowNum);
+    void checkInform();
 };
 
 #endif // TIMECLOCK_H
