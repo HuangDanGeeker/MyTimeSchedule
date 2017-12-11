@@ -29,14 +29,16 @@ SOURCES += main.cpp\
     processbardelegate.cpp \
     dateeditdelegate.cpp \
     timeeditdelegate.cpp \
-    datastructs.cpp
+    datastructs.cpp \
+    timeclock.cpp
 
 HEADERS  += mainwindow.h \
     hoverwidget.h \
     processbardelegate.h \
     dateeditdelegate.h \
     timeeditdelegate.h \
-    datastructs.h
+    datastructs.h \
+    timeclock.h
 
 
 FORMS    += mainwindow.ui \

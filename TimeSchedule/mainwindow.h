@@ -21,7 +21,7 @@ private:
     Ui::MainWindow *ui;
     void initScheduleCalendar();
     void closeEvent(QCloseEvent *e);
-    MISSION getScheduleItem(int rowNum);
+    void getScheduleItem(int rowNum, PMISSION mission);
     int currentRowNum;
 signals:
     void MissionUpdate(PMISSION mission);
