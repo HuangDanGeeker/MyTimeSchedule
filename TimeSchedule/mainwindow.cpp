@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     this->setWindowTitle("TimeSchedule");
     this->setFixedSize(this->size());
     initScheduleCalendar();
-
+    initBtn();
     connect(ui->addMissionBtn, SIGNAL(clicked(bool)), this, SLOT(addMission()));
     connect(ui->deleteMissionBtn, SIGNAL(clicked(bool)), this, SLOT(deleteMission()));
     connect(ui->updateMissionBtn, SIGNAL(clicked(bool)), this, SLOT(updateMission()));
@@ -49,6 +49,28 @@ void MainWindow::initScheduleCalendar(){
     ui->ScheduleView->setItemDelegateForColumn(4, timeEdit);
 
 
+}
+
+void MainWindow::initBtn(){
+    QPixmap icon(tr(":/imgs/res/innerIcons/Add Green Button.png"));
+    ui->addMissionBtn->setIcon(icon);
+    ui->addMissionBtn->setFixedSize(icon.size());
+    ui->addMissionBtn->setToolTip("add a mission");
+
+    icon.load(":/imgs/res/innerIcons/Clear Green Button.png");
+    ui->updateMissionBtn->setIcon(icon);
+    ui->updateMissionBtn->setFixedSize(icon.size());
+    ui->updateMissionBtn->setToolTip("update a added mission");
+
+    icon.load(":/imgs/res/innerIcons/Minus Red Button.png");
+    ui->deleteMissionBtn->setIcon(icon);
+    ui->deleteMissionBtn->setFixedSize(icon.size());
+    ui->deleteMissionBtn->setToolTip("delete the selected missions");
+
+    icon.load(":/imgs/res/innerIcons/Play All.png");
+    ui->updateAllBtn->setIcon(icon);
+    ui->updateAllBtn->setFixedSize(icon.size());
+    ui->updateAllBtn->setToolTip("update all missions");
 }
 
 void MainWindow::closeEvent(QCloseEvent *e){

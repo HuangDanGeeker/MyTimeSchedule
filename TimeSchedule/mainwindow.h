@@ -20,6 +20,7 @@ public:
 private:
     Ui::MainWindow *ui;
     void initScheduleCalendar();
+    void initBtn();
     void closeEvent(QCloseEvent *e);
     MISSION getScheduleItem(int rowNum);
     int currentRowNum;

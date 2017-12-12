@@ -58,16 +58,16 @@ public:
         ScheduleView->setGeometry(QRect(0, 40, 651, 231));
         addMissionBtn = new QPushButton(tab);
         addMissionBtn->setObjectName(QStringLiteral("addMissionBtn"));
-        addMissionBtn->setGeometry(QRect(300, 10, 75, 23));
+        addMissionBtn->setGeometry(QRect(440, 0, 31, 23));
         deleteMissionBtn = new QPushButton(tab);
         deleteMissionBtn->setObjectName(QStringLiteral("deleteMissionBtn"));
-        deleteMissionBtn->setGeometry(QRect(560, 10, 75, 23));
+        deleteMissionBtn->setGeometry(QRect(590, 0, 31, 23));
         updateMissionBtn = new QPushButton(tab);
         updateMissionBtn->setObjectName(QStringLiteral("updateMissionBtn"));
-        updateMissionBtn->setGeometry(QRect(390, 10, 75, 23));
+        updateMissionBtn->setGeometry(QRect(490, 0, 31, 23));
         updateAllBtn = new QPushButton(tab);
         updateAllBtn->setObjectName(QStringLiteral("updateAllBtn"));
-        updateAllBtn->setGeometry(QRect(470, 10, 75, 23));
+        updateAllBtn->setGeometry(QRect(540, 0, 31, 23));
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));
@@ -95,10 +95,10 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
-        addMissionBtn->setText(QApplication::translate("MainWindow", "\346\267\273\345\212\240", Q_NULLPTR));
-        deleteMissionBtn->setText(QApplication::translate("MainWindow", "\345\210\240\351\231\244", Q_NULLPTR));
-        updateMissionBtn->setText(QApplication::translate("MainWindow", "\346\233\264\346\226\260", Q_NULLPTR));
-        updateAllBtn->setText(QApplication::translate("MainWindow", "\346\233\264\346\226\260\345\205\250\351\203\250", Q_NULLPTR));
+        addMissionBtn->setText(QString());
+        deleteMissionBtn->setText(QString());
+        updateMissionBtn->setText(QString());
+        updateAllBtn->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "Tab 1", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Tab 2", Q_NULLPTR));
     } // retranslateUi

@@ -43,53 +43,53 @@
      <widget class="QPushButton" name="addMissionBtn">
       <property name="geometry">
        <rect>
-        <x>300</x>
-        <y>10</y>
-        <width>75</width>
+        <x>440</x>
+        <y>0</y>
+        <width>31</width>
         <height>23</height>
        </rect>
       </property>
       <property name="text">
-       <string>添加</string>
+       <string/>
       </property>
      </widget>
      <widget class="QPushButton" name="deleteMissionBtn">
       <property name="geometry">
        <rect>
-        <x>560</x>
-        <y>10</y>
-        <width>75</width>
+        <x>590</x>
+        <y>0</y>
+        <width>31</width>
         <height>23</height>
        </rect>
       </property>
       <property name="text">
-       <string>删除</string>
+       <string/>
       </property>
      </widget>
      <widget class="QPushButton" name="updateMissionBtn">
       <property name="geometry">
        <rect>
-        <x>390</x>
-        <y>10</y>
-        <width>75</width>
+        <x>490</x>
+        <y>0</y>
+        <width>31</width>
         <height>23</height>
        </rect>
       </property>
       <property name="text">
-       <string>更新</string>
+       <string/>
       </property>
      </widget>
      <widget class="QPushButton" name="updateAllBtn">
       <property name="geometry">
        <rect>
-        <x>470</x>
-        <y>10</y>
-        <width>75</width>
+        <x>540</x>
+        <y>0</y>
+        <width>31</width>
         <height>23</height>
        </rect>
       </property>
       <property name="text">
-       <string>更新全部</string>
+       <string/>
       </property>
      </widget>
     </widget>

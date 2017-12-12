@@ -5,7 +5,6 @@ TimeClock::TimeClock(MainWindow *mainWindow, QObject * parent) : QObject(parent)
     setMainWindow(mainWindow);
 
     connect(mainWindow, SIGNAL(MissionUpdate(PMISSION)), this, SLOT(MissionUpdate(PMISSION)));
-    connect(mainWindow, SIGNAL(MissionUpdate(int,PMISSION)), this, SLOT(MissionUpdate(int,PMISSION)));
     connect(mainWindow, SIGNAL(MissionUpdateAll(QList<MISSION>)), this, SLOT(MissionUpdateAll(QList<MISSION>)));
     connect(mainWindow, SIGNAL(MissionDelete(int)), this, SLOT(MissionDelete(int)));
 

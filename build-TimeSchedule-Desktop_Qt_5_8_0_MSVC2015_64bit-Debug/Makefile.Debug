@@ -199,35 +199,7 @@ debug\qrc_res.cpp: ..\TimeSchedule\res.qrc \
 		..\TimeSchedule\res\imgs\haimian.jpg \
 		..\TimeSchedule\res\imgs\img.jpg \
 		..\TimeSchedule\res\imgs\icon.jpg \
-		..\TimeSchedule\res\imgs\icon.ico \
-		..\TimeSchedule\res\innerIcons\Pause.png \
-		..\TimeSchedule\res\innerIcons\Remove.png \
-		..\TimeSchedule\res\innerIcons\Terminal.png \
-		..\TimeSchedule\res\innerIcons\.DS_Store \
-		..\TimeSchedule\res\innerIcons\Stop.png \
-		..\TimeSchedule\res\innerIcons\Run.png \
-		..\TimeSchedule\res\innerIcons\Menu.png \
-		..\TimeSchedule\res\innerIcons\Bandwidth.png \
-		..\TimeSchedule\res\innerIcons\Donate.png \
-		..\TimeSchedule\res\innerIcons\Desktop.png \
-		..\TimeSchedule\res\innerIcons\Add.png \
-		..\TimeSchedule\res\innerIcons\Coherence.png \
-		..\TimeSchedule\res\innerIcons\User.png \
-		..\TimeSchedule\res\innerIcons\Favorite.png \
-		..\TimeSchedule\res\innerIcons\Smiley.png \
-		..\TimeSchedule\res\innerIcons\CD.png \
-		..\TimeSchedule\res\innerIcons\Mail.png \
-		..\TimeSchedule\res\innerIcons\History.png \
-		..\TimeSchedule\res\innerIcons\Users.png \
-		..\TimeSchedule\res\innerIcons\iChat.png \
-		..\TimeSchedule\res\innerIcons\Transfer.png \
-		..\TimeSchedule\res\innerIcons\Play.png \
-		..\TimeSchedule\res\innerIcons\Discussion.png \
-		..\TimeSchedule\res\innerIcons\Document.png \
-		..\TimeSchedule\res\innerIcons\Star.png \
-		..\TimeSchedule\res\innerIcons\Gear.png \
-		..\TimeSchedule\res\innerIcons\Fullscreen.png \
-		..\TimeSchedule\res\innerIcons\Network.png
+		..\TimeSchedule\res\imgs\icon.ico
 	F:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\rcc.exe -name res ..\TimeSchedule\res.qrc -o debug\qrc_res.cpp
 
 compiler_moc_predefs_make_all: debug\moc_predefs.h
@@ -471,6 +443,7 @@ debug\moc_hoverwidget.cpp: F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidg
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QTimer \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qtimer.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qbasictimer.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QList \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QTime \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qdatetime.h \
 		..\TimeSchedule\hoverwidget.h \
@@ -590,6 +563,7 @@ debug\moc_timeclock.cpp: F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QObject \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtabwidget.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qicon.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QCloseEvent \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QList \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QTime \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qdatetime.h \
 		..\TimeSchedule\timeclock.h \
@@ -750,6 +724,7 @@ debug\main.obj: ..\TimeSchedule\main.cpp ../TimeSchedule/mainwindow.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QTimer \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qtimer.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qbasictimer.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QList \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QTime \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qdatetime.h
 
@@ -1040,6 +1015,7 @@ debug\hoverwidget.obj: ..\TimeSchedule\hoverwidget.cpp ../TimeSchedule/hoverwidg
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QTimer \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qtimer.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qbasictimer.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QList \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QTime \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qdatetime.h \
 		ui_hoverwidget.h \
@@ -1598,6 +1574,7 @@ debug\timeclock.obj: ..\TimeSchedule\timeclock.cpp ../TimeSchedule/timeclock.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtabwidget.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qicon.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QCloseEvent \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QList \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QTime \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qdatetime.h
 
