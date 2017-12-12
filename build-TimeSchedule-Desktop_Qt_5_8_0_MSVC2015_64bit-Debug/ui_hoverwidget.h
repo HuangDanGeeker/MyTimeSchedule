@@ -28,10 +28,10 @@ public:
     {
         if (HoverWidget->objectName().isEmpty())
             HoverWidget->setObjectName(QStringLiteral("HoverWidget"));
-        HoverWidget->resize(400, 300);
+        HoverWidget->resize(324, 179);
         label = new QLabel(HoverWidget);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(50, 90, 271, 131));
+        label->setGeometry(QRect(10, 10, 271, 131));
 
         retranslateUi(HoverWidget);
 

@@ -9,7 +9,7 @@ HoverWidget::HoverWidget(QWidget *parent) :
     ui(new Ui::HoverWidget)
 {
     ui->setupUi(this);
-    this->setWindowFlags(this->windowFlags() | Qt::FramelessWindowHint);
+    this->setWindowFlags(this->windowFlags() | Qt::FramelessWindowHint | Qt::Tool);
     this->setAttribute(Qt::WA_TranslucentBackground, true);
 
     QDesktopWidget* desktopWidget = QApplication::desktop();
@@ -23,6 +23,11 @@ HoverWidget::HoverWidget(QWidget *parent) :
     ui->label->resize(image.size());
 
     ui->label->show();
+
+    //图标右上角悬浮
+    QDesktopWidget* desktop=QApplication::desktop();//获取屏幕尺寸
+
+    move((desktop->width() *0.85),desktop->height() *0.03 - 50);//移到右上角
 
     createMenue();
 }

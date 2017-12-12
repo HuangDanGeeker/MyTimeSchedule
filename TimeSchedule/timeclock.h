@@ -14,7 +14,7 @@ public:
 
 private:
     QTimer timer;
-    QList<MISSION> misssions;
+    QList<MISSION> missions;
     MainWindow * mainWindow;
     void setMainWindow(MainWindow *);
 
