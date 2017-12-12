@@ -8,5 +8,7 @@
         <file>res/innerIcons/Clear Green Button.png</file>
         <file>res/innerIcons/Minus Red Button.png</file>
         <file>res/innerIcons/Play All.png</file>
+        <file>res/innerIcons/Internet History.png</file>
+        <file>res/innerIcons/Universal Binary.png</file>
     </qresource>
 </RCC>

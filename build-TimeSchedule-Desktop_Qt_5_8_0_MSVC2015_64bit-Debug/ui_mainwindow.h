@@ -30,13 +30,13 @@ class Ui_MainWindow
 public:
     QWidget *centralWidget;
     QTabWidget *tabWidget;
-    QWidget *tab;
+    QWidget *ScheduleTab;
     QTableView *ScheduleView;
     QPushButton *addMissionBtn;
     QPushButton *deleteMissionBtn;
     QPushButton *updateMissionBtn;
     QPushButton *updateAllBtn;
-    QWidget *tab_2;
+    QWidget *RecordTab;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -50,28 +50,36 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         tabWidget = new QTabWidget(centralWidget);
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
+        tabWidget->setEnabled(true);
         tabWidget->setGeometry(QRect(0, 10, 671, 321));
-        tab = new QWidget();
-        tab->setObjectName(QStringLiteral("tab"));
-        ScheduleView = new QTableView(tab);
+        QFont font;
+        font.setPointSize(10);
+        tabWidget->setFont(font);
+        ScheduleTab = new QWidget();
+        ScheduleTab->setObjectName(QStringLiteral("ScheduleTab"));
+        ScheduleView = new QTableView(ScheduleTab);
         ScheduleView->setObjectName(QStringLiteral("ScheduleView"));
         ScheduleView->setGeometry(QRect(0, 40, 651, 231));
-        addMissionBtn = new QPushButton(tab);
+        addMissionBtn = new QPushButton(ScheduleTab);
         addMissionBtn->setObjectName(QStringLiteral("addMissionBtn"));
         addMissionBtn->setGeometry(QRect(440, 0, 31, 23));
-        deleteMissionBtn = new QPushButton(tab);
+        deleteMissionBtn = new QPushButton(ScheduleTab);
         deleteMissionBtn->setObjectName(QStringLiteral("deleteMissionBtn"));
         deleteMissionBtn->setGeometry(QRect(590, 0, 31, 23));
-        updateMissionBtn = new QPushButton(tab);
+        updateMissionBtn = new QPushButton(ScheduleTab);
         updateMissionBtn->setObjectName(QStringLiteral("updateMissionBtn"));
         updateMissionBtn->setGeometry(QRect(490, 0, 31, 23));
-        updateAllBtn = new QPushButton(tab);
+        updateAllBtn = new QPushButton(ScheduleTab);
         updateAllBtn->setObjectName(QStringLiteral("updateAllBtn"));
         updateAllBtn->setGeometry(QRect(540, 0, 31, 23));
-        tabWidget->addTab(tab, QString());
-        tab_2 = new QWidget();
-        tab_2->setObjectName(QStringLiteral("tab_2"));
-        tabWidget->addTab(tab_2, QString());
+        QIcon icon;
+        icon.addFile(QStringLiteral(":/imgs/res/innerIcons/Internet History.png"), QSize(), QIcon::Active, QIcon::On);
+        tabWidget->addTab(ScheduleTab, icon, QString());
+        RecordTab = new QWidget();
+        RecordTab->setObjectName(QStringLiteral("RecordTab"));
+        QIcon icon1;
+        icon1.addFile(QStringLiteral(":/imgs/res/innerIcons/Universal Binary.png"), QSize(), QIcon::Active, QIcon::On);
+        tabWidget->addTab(RecordTab, icon1, QString());
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -86,7 +94,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -99,8 +107,8 @@ public:
         deleteMissionBtn->setText(QString());
         updateMissionBtn->setText(QString());
         updateAllBtn->setText(QString());
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "Tab 1", Q_NULLPTR));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Tab 2", Q_NULLPTR));
+        tabWidget->setTabText(tabWidget->indexOf(ScheduleTab), QApplication::translate("MainWindow", "Schedule", Q_NULLPTR));
+        tabWidget->setTabText(tabWidget->indexOf(RecordTab), QApplication::translate("MainWindow", "Record", Q_NULLPTR));
     } // retranslateUi
 
 };

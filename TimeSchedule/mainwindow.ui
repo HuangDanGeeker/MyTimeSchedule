@@ -15,6 +15,9 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QTabWidget" name="tabWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -23,12 +26,22 @@
       <height>321</height>
      </rect>
     </property>
-    <property name="currentIndex">
-     <number>0</number>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
     </property>
-    <widget class="QWidget" name="tab">
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="ScheduleTab">
+     <attribute name="icon">
+      <iconset>
+       <activeon>:/imgs/res/innerIcons/Internet History.png</activeon>
+      </iconset>
+     </attribute>
      <attribute name="title">
-      <string>Tab 1</string>
+      <string>Schedule</string>
      </attribute>
      <widget class="QTableView" name="ScheduleView">
       <property name="geometry">
@@ -93,9 +106,14 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab_2">
+    <widget class="QWidget" name="RecordTab">
+     <attribute name="icon">
+      <iconset>
+       <activeon>:/imgs/res/innerIcons/Universal Binary.png</activeon>
+      </iconset>
+     </attribute>
      <attribute name="title">
-      <string>Tab 2</string>
+      <string>Record</string>
      </attribute>
     </widget>
    </widget>
