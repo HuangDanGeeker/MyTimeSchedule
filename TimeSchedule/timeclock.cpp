@@ -6,7 +6,7 @@ TimeClock::TimeClock(MainWindow *mainWindow, QObject * parent) : QObject(parent)
 
     connect(mainWindow, SIGNAL(MissionUpdate(PMISSION)), this, SLOT(MissionUpdate(PMISSION)));
     connect(mainWindow, SIGNAL(MissionUpdate(int,PMISSION)), this, SLOT(MissionUpdate(int,PMISSION)));
-    connect(mainWindow, SIGNAL(MissionUpdateAll(MISSION[],int)), this, SLOT(MissionUpdateAll(MISSION[],int)));
+    connect(mainWindow, SIGNAL(MissionUpdateAll(QList<MISSION>)), this, SLOT(MissionUpdateAll(QList<MISSION>)));
     connect(mainWindow, SIGNAL(MissionDelete(int)), this, SLOT(MissionDelete(int)));
 
     connect(&timer, SIGNAL(timeout()), this, SLOT(checkInform()));
@@ -30,10 +30,10 @@ void TimeClock::MissionUpdate(int rowNum, PMISSION mission){
     qDebug()<<"MissionUpdate(int rowNum, PMISSION mission)";
 }
 
-void TimeClock::MissionUpdateAll(MISSION missions[], int len){
+void TimeClock::MissionUpdateAll(QList<MISSION> missions){
     qDebug()<<"MissionUpdateAll(MISSION missions[], int len)";
     this->missions.clear();
-    for(int i = 0; i < len; i++){
+    for(int i = 0; i < missions.size(); i++){
         this->missions.append(missions[i]);
     }
 }

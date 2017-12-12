@@ -56,16 +56,17 @@ void MainWindow::closeEvent(QCloseEvent *e){
     this->hide();
 }
 
-void MainWindow::getScheduleItem(int rowNum, PMISSION mission){
+MISSION MainWindow::getScheduleItem(int rowNum){
     QStandardItemModel * model = (QStandardItemModel *)ui->ScheduleView->model();
+    MISSION mission;
+    mission.title = model->data(model->index(rowNum, 0)).toString();
+    mission.remarks = model->data(model->index(rowNum, 1)).toString();
+    mission.startDate = model->data(model->index(rowNum, 2)).toString();
+    mission.endDate = model->data(model->index(rowNum, 3)).toString();
+    mission.infromTime = model->data(model->index(rowNum, 4)).toString();
+    mission.achievePercence = model->data(model->index(rowNum, 5)).toString();
 
-    mission->title = model->data(model->index(rowNum, 0)).toString();
-    mission->remarks = model->data(model->index(rowNum, 1)).toString();
-    mission->startDate = model->data(model->index(rowNum, 2)).toString();
-    mission->endDate = model->data(model->index(rowNum, 3)).toString();
-    mission->infromTime = model->data(model->index(rowNum, 4)).toString();
-    mission->achievePercence = model->data(model->index(rowNum, 5)).toString();
-
+    return mission;
 }
 
 void MainWindow::addMission(){
@@ -123,19 +124,19 @@ void MainWindow::updateAllMission(){
     qDebug()<<"update all mission";
     QStandardItemModel * model = (QStandardItemModel*) ui->ScheduleView->model();
     int rowCount = model->rowCount();
-    int num = 10;
-    MISSION *missions = new MISSION[rowCount];
-    for(int i = 0; i < rowCount; i++ ){
-        getScheduleItem(i, &missions[i]);
+
+    QList<MISSION> missions;
+    for(int i = 0; i < rowCount; i++){
+        missions << getScheduleItem(i);
     }
-    emit MissionUpdateAll(missions, rowCount);
+    emit MissionUpdateAll(missions);
 
 }
 
 void MainWindow::updateMission(){
     MISSION mission;
 
-    getScheduleItem(currentRowNum, &mission);
+    mission = getScheduleItem(currentRowNum);
     updateMission(&mission);
 }
 

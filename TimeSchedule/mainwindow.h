@@ -21,12 +21,12 @@ private:
     Ui::MainWindow *ui;
     void initScheduleCalendar();
     void closeEvent(QCloseEvent *e);
-    void getScheduleItem(int rowNum, PMISSION mission);
+    MISSION getScheduleItem(int rowNum);
     int currentRowNum;
 signals:
     void MissionUpdate(PMISSION mission);
     void MissionUpdate(int rowNum, PMISSION mission);
-    void MissionUpdateAll(MISSION missions[], int len);
+    void MissionUpdateAll(QList<MISSION> missions);
     void MissionDelete(int rowNum);
 private slots:
     void addMission();

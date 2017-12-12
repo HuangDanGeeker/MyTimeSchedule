@@ -5,6 +5,7 @@
 #include <datastructs.h>
 #include <QTimer>
 #include <mainwindow.h>
+#include <QList>
 #include <QTime>
 class TimeClock : public QObject
 {
@@ -21,7 +22,7 @@ private:
 private slots:
     void MissionUpdate(PMISSION mission);
     void MissionUpdate(int rowNum, PMISSION mission);
-    void MissionUpdateAll(MISSION missions[], int len);
+    void MissionUpdateAll(QList<MISSION> missions);
     void MissionDelete(int rowNum);
     void checkInform();
 };
