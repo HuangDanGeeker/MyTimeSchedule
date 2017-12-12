@@ -37,11 +37,11 @@ QT_MOC_LITERAL(1, 11, 13), // "MissionUpdate"
 QT_MOC_LITERAL(2, 25, 0), // ""
 QT_MOC_LITERAL(3, 26, 8), // "PMISSION"
 QT_MOC_LITERAL(4, 35, 7), // "mission"
-QT_MOC_LITERAL(5, 43, 6), // "rowNum"
-QT_MOC_LITERAL(6, 50, 16), // "MissionUpdateAll"
-QT_MOC_LITERAL(7, 67, 14), // "QList<MISSION>"
-QT_MOC_LITERAL(8, 82, 8), // "missions"
-QT_MOC_LITERAL(9, 91, 13), // "MissionDelete"
+QT_MOC_LITERAL(5, 43, 16), // "MissionUpdateAll"
+QT_MOC_LITERAL(6, 60, 14), // "QList<MISSION>"
+QT_MOC_LITERAL(7, 75, 8), // "missions"
+QT_MOC_LITERAL(8, 84, 13), // "MissionDelete"
+QT_MOC_LITERAL(9, 98, 6), // "rowNum"
 QT_MOC_LITERAL(10, 105, 10), // "addMission"
 QT_MOC_LITERAL(11, 116, 5), // "title"
 QT_MOC_LITERAL(12, 122, 7), // "remarks"
@@ -55,12 +55,11 @@ QT_MOC_LITERAL(19, 203, 16) // "updateAllMission"
 
     },
     "MainWindow\0MissionUpdate\0\0PMISSION\0"
-    "mission\0rowNum\0MissionUpdateAll\0"
-    "QList<MISSION>\0missions\0MissionDelete\0"
-    "addMission\0title\0remarks\0startDate\0"
-    "endDate\0infromTime\0achievePercence\0"
-    "deleteMission\0updateMission\0"
-    "updateAllMission"
+    "mission\0MissionUpdateAll\0QList<MISSION>\0"
+    "missions\0MissionDelete\0rowNum\0addMission\0"
+    "title\0remarks\0startDate\0endDate\0"
+    "infromTime\0achievePercence\0deleteMission\0"
+    "updateMission\0updateAllMission"
 };
 #undef QT_MOC_LITERAL
 
@@ -70,33 +69,31 @@ static const uint qt_meta_data_MainWindow[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      11,   14, // methods
+      10,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       4,       // signalCount
+       3,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    1,   69,    2, 0x06 /* Public */,
-       1,    2,   72,    2, 0x06 /* Public */,
-       6,    1,   77,    2, 0x06 /* Public */,
-       9,    1,   80,    2, 0x06 /* Public */,
+       1,    1,   64,    2, 0x06 /* Public */,
+       5,    1,   67,    2, 0x06 /* Public */,
+       8,    1,   70,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-      10,    0,   83,    2, 0x08 /* Private */,
-      10,    1,   84,    2, 0x08 /* Private */,
-      10,    6,   87,    2, 0x08 /* Private */,
-      17,    0,  100,    2, 0x08 /* Private */,
-      18,    0,  101,    2, 0x08 /* Private */,
-      18,    1,  102,    2, 0x08 /* Private */,
-      19,    0,  105,    2, 0x08 /* Private */,
+      10,    0,   73,    2, 0x08 /* Private */,
+      10,    1,   74,    2, 0x08 /* Private */,
+      10,    6,   77,    2, 0x08 /* Private */,
+      17,    0,   90,    2, 0x08 /* Private */,
+      18,    0,   91,    2, 0x08 /* Private */,
+      18,    1,   92,    2, 0x08 /* Private */,
+      19,    0,   95,    2, 0x08 /* Private */,
 
  // signals: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
-    QMetaType::Void, QMetaType::Int, 0x80000000 | 3,    5,    4,
-    QMetaType::Void, 0x80000000 | 7,    8,
-    QMetaType::Void, QMetaType::Int,    5,
+    QMetaType::Void, 0x80000000 | 6,    7,
+    QMetaType::Void, QMetaType::Int,    9,
 
  // slots: parameters
     QMetaType::Void,
@@ -117,16 +114,15 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->MissionUpdate((*reinterpret_cast< PMISSION(*)>(_a[1]))); break;
-        case 1: _t->MissionUpdate((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< PMISSION(*)>(_a[2]))); break;
-        case 2: _t->MissionUpdateAll((*reinterpret_cast< QList<MISSION>(*)>(_a[1]))); break;
-        case 3: _t->MissionDelete((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 4: _t->addMission(); break;
-        case 5: _t->addMission((*reinterpret_cast< PMISSION(*)>(_a[1]))); break;
-        case 6: _t->addMission((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< QString(*)>(_a[3])),(*reinterpret_cast< QString(*)>(_a[4])),(*reinterpret_cast< QString(*)>(_a[5])),(*reinterpret_cast< QString(*)>(_a[6]))); break;
-        case 7: _t->deleteMission(); break;
-        case 8: _t->updateMission(); break;
-        case 9: _t->updateMission((*reinterpret_cast< PMISSION(*)>(_a[1]))); break;
-        case 10: _t->updateAllMission(); break;
+        case 1: _t->MissionUpdateAll((*reinterpret_cast< QList<MISSION>(*)>(_a[1]))); break;
+        case 2: _t->MissionDelete((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 3: _t->addMission(); break;
+        case 4: _t->addMission((*reinterpret_cast< PMISSION(*)>(_a[1]))); break;
+        case 5: _t->addMission((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< QString(*)>(_a[3])),(*reinterpret_cast< QString(*)>(_a[4])),(*reinterpret_cast< QString(*)>(_a[5])),(*reinterpret_cast< QString(*)>(_a[6]))); break;
+        case 6: _t->deleteMission(); break;
+        case 7: _t->updateMission(); break;
+        case 8: _t->updateMission((*reinterpret_cast< PMISSION(*)>(_a[1]))); break;
+        case 9: _t->updateAllMission(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -140,23 +136,16 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
             }
         }
         {
-            typedef void (MainWindow::*_t)(int , PMISSION );
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&MainWindow::MissionUpdate)) {
-                *result = 1;
-                return;
-            }
-        }
-        {
             typedef void (MainWindow::*_t)(QList<MISSION> );
             if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&MainWindow::MissionUpdateAll)) {
-                *result = 2;
+                *result = 1;
                 return;
             }
         }
         {
             typedef void (MainWindow::*_t)(int );
             if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&MainWindow::MissionDelete)) {
-                *result = 3;
+                *result = 2;
                 return;
             }
         }
@@ -188,13 +177,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 11)
+        if (_id < 10)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 11;
+        _id -= 10;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 11)
+        if (_id < 10)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 11;
+        _id -= 10;
     }
     return _id;
 }
@@ -207,24 +196,17 @@ void MainWindow::MissionUpdate(PMISSION _t1)
 }
 
 // SIGNAL 1
-void MainWindow::MissionUpdate(int _t1, PMISSION _t2)
+void MainWindow::MissionUpdateAll(QList<MISSION> _t1)
 {
-    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
+    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 
 // SIGNAL 2
-void MainWindow::MissionUpdateAll(QList<MISSION> _t1)
-{
-    void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
-    QMetaObject::activate(this, &staticMetaObject, 2, _a);
-}
-
-// SIGNAL 3
 void MainWindow::MissionDelete(int _t1)
 {
     void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
-    QMetaObject::activate(this, &staticMetaObject, 3, _a);
+    QMetaObject::activate(this, &staticMetaObject, 2, _a);
 }
 QT_WARNING_POP
 QT_END_MOC_NAMESPACE

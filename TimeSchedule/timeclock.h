@@ -21,7 +21,6 @@ private:
 
 private slots:
     void MissionUpdate(PMISSION mission);
-    void MissionUpdate(int rowNum, PMISSION mission);
     void MissionUpdateAll(QList<MISSION> missions);
     void MissionDelete(int rowNum);
     void checkInform();

@@ -26,9 +26,6 @@ void TimeClock::MissionUpdate(PMISSION mission){
     this->missions.append(m);
 }
 
-void TimeClock::MissionUpdate(int rowNum, PMISSION mission){
-    qDebug()<<"MissionUpdate(int rowNum, PMISSION mission)";
-}
 
 void TimeClock::MissionUpdateAll(QList<MISSION> missions){
     qDebug()<<"MissionUpdateAll(MISSION missions[], int len)";

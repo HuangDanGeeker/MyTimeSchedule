@@ -25,7 +25,6 @@ private:
     int currentRowNum;
 signals:
     void MissionUpdate(PMISSION mission);
-    void MissionUpdate(int rowNum, PMISSION mission);
     void MissionUpdateAll(QList<MISSION> missions);
     void MissionDelete(int rowNum);
 private slots:
