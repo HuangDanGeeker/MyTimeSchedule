@@ -39,6 +39,8 @@ HoverWidget::~HoverWidget()
 
 void HoverWidget::exit(){
     this->close();
+    this->mainWindow->close();
+    this->imgCapture->close();
 }
 
 //将主界面显示或隐藏
@@ -96,4 +98,7 @@ void HoverWidget::setMainWindow(MainWindow *mainWindow){
 }
 void HoverWidget::setTimeClock(TimeClock *timeClock){
     this->timeClock = timeClock;
+}
+void HoverWidget::setImgCapture(RandomImgCapture *imgCapture){
+    this->imgCapture = imgCapture;
 }

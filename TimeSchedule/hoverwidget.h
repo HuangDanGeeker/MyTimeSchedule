@@ -7,6 +7,7 @@
 #include <QMenu>
 #include <QAction>
 #include <timeclock.h>
+#include <randomimgcapture.h>
 namespace Ui {
 class HoverWidget;
 }
@@ -20,6 +21,7 @@ public:
     ~HoverWidget();
     void setMainWindow(MainWindow *mainWindow);
     void setTimeClock(TimeClock *timeClock);
+    void setImgCapture(RandomImgCapture *);
     int desktopWidth;
     int desktopHeight;
 private:
@@ -27,6 +29,7 @@ private:
     QPoint relativePoint;
     MainWindow *mainWindow;
     TimeClock *timeClock;
+    RandomImgCapture * imgCapture;
     QApplication *application;
     QMenu menue;
 private slots:

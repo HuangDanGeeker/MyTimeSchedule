@@ -452,6 +452,34 @@ release\moc_hoverwidget.cpp: F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWi
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QList \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QTime \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qdatetime.h \
+		..\TimeSchedule\randomimgcapture.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QDialog \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdialog.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\QCamera \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qcamera.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediacontrol.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qtmultimediaglobal.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qtmultimedia-config.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediaobject.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmultimedia.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediaservice.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qcameraexposure.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediaenumdebug.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qmetaobject.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qcamerafocus.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qcameraimageprocessing.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qcameraviewfindersettings.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qvideoframe.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qabstractvideobuffer.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\QCameraImageCapture \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qcameraimagecapture.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediaencodersettings.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediabindableinterface.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QDebug \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLabel \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlabel.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qframe.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QPixmap \
 		..\TimeSchedule\hoverwidget.h \
 		release\moc_predefs.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe
@@ -699,6 +727,14 @@ release\moc_randomimgcapture.cpp: F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidget
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qcameraimagecapture.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediaencodersettings.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediabindableinterface.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QDebug \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLabel \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlabel.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qframe.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QPixmap \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QTimer \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qtimer.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qbasictimer.h \
 		..\TimeSchedule\randomimgcapture.h \
 		release\moc_predefs.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe
@@ -863,7 +899,35 @@ release\main.obj: ..\TimeSchedule\main.cpp ../TimeSchedule/mainwindow.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qbasictimer.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QList \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QTime \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qdatetime.h
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qdatetime.h \
+		../TimeSchedule/randomimgcapture.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QDialog \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdialog.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\QCamera \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qcamera.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediacontrol.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qtmultimediaglobal.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qtmultimedia-config.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediaobject.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmultimedia.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediaservice.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qcameraexposure.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediaenumdebug.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qmetaobject.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qcamerafocus.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qcameraimageprocessing.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qcameraviewfindersettings.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qvideoframe.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qabstractvideobuffer.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\QCameraImageCapture \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qcameraimagecapture.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediaencodersettings.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediabindableinterface.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QDebug \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLabel \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlabel.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qframe.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QPixmap
 
 release\mainwindow.obj: ..\TimeSchedule\mainwindow.cpp ../TimeSchedule/mainwindow.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMainWindow \
@@ -1155,6 +1219,34 @@ release\hoverwidget.obj: ..\TimeSchedule\hoverwidget.cpp ../TimeSchedule/hoverwi
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QList \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QTime \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qdatetime.h \
+		../TimeSchedule/randomimgcapture.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QDialog \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdialog.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\QCamera \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qcamera.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediacontrol.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qtmultimediaglobal.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qtmultimedia-config.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediaobject.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmultimedia.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediaservice.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qcameraexposure.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediaenumdebug.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qmetaobject.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qcamerafocus.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qcameraimageprocessing.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qcameraviewfindersettings.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qvideoframe.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qabstractvideobuffer.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\QCameraImageCapture \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qcameraimagecapture.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediaencodersettings.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediabindableinterface.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QDebug \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLabel \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlabel.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qframe.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QPixmap \
 		ui_hoverwidget.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QVariant \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QApplication \
@@ -1170,7 +1262,6 @@ release\hoverwidget.obj: ..\TimeSchedule\hoverwidget.cpp ../TimeSchedule/hoverwi
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qheaderview.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemview.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractscrollarea.h \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qframe.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qabstractitemmodel.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qitemselectionmodel.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemdelegate.h \
@@ -1183,10 +1274,6 @@ release\hoverwidget.obj: ..\TimeSchedule\hoverwidget.cpp ../TimeSchedule/hoverwi
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyle.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtabbar.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qrubberband.h \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLabel \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlabel.h \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QPixmap \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QDebug \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QDir \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qdir.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qfileinfo.h \
@@ -1838,6 +1925,14 @@ release\randomimgcapture.obj: ..\TimeSchedule\randomimgcapture.cpp ../TimeSchedu
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qcameraimagecapture.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediaencodersettings.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtMultimedia\qmediabindableinterface.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QDebug \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLabel \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlabel.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qframe.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QPixmap \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QTimer \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qtimer.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qbasictimer.h \
 		ui_randomimgcapture.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QVariant \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QAction \
@@ -1857,7 +1952,6 @@ release\randomimgcapture.obj: ..\TimeSchedule\randomimgcapture.cpp ../TimeSchedu
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qheaderview.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemview.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractscrollarea.h \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qframe.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qabstractitemmodel.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qitemselectionmodel.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemdelegate.h \
@@ -1871,11 +1965,12 @@ release\randomimgcapture.obj: ..\TimeSchedule\randomimgcapture.cpp ../TimeSchedu
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtabbar.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtabwidget.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qrubberband.h \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLabel \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlabel.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QPushButton \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qpushbutton.h \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractbutton.h
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractbutton.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QDate \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qdatetime.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QTime
 
 release\qrc_res.obj: release\qrc_res.cpp 
 
