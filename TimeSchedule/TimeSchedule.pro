@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -30,7 +30,8 @@ SOURCES += main.cpp\
     dateeditdelegate.cpp \
     timeeditdelegate.cpp \
     datastructs.cpp \
-    timeclock.cpp
+    timeclock.cpp \
+    randomimgcapture.cpp
 
 HEADERS  += mainwindow.h \
     hoverwidget.h \
@@ -38,11 +39,13 @@ HEADERS  += mainwindow.h \
     dateeditdelegate.h \
     timeeditdelegate.h \
     datastructs.h \
-    timeclock.h
+    timeclock.h \
+    randomimgcapture.h
 
 
 FORMS    += mainwindow.ui \
-    hoverwidget.ui
+    hoverwidget.ui \
+    randomimgcapture.ui
 
 RESOURCES += \
     res.qrc

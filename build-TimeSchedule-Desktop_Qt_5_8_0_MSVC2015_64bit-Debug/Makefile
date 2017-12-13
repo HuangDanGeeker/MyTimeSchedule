@@ -242,8 +242,10 @@ Makefile: ..\TimeSchedule\TimeSchedule.pro F:\Qt\Qt5.8.0\5.8\msvc2015_64\mkspecs
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\lex.prf \
 		..\TimeSchedule\TimeSchedule.pro \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\qtmaind.prl \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Multimedia.prl \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Widgets.prl \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Gui.prl \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Network.prl \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Core.prl
 	$(QMAKE) -o Makefile ..\TimeSchedule\TimeSchedule.pro -spec win32-msvc2015 "CONFIG+=debug" "CONFIG+=qml_debug"
 F:\Qt\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\spec_pre.prf:
@@ -415,8 +417,10 @@ F:\Qt\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\yacc.prf:
 F:\Qt\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\lex.prf:
 ..\TimeSchedule\TimeSchedule.pro:
 F:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\qtmaind.prl:
+F:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Multimedia.prl:
 F:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Widgets.prl:
 F:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Gui.prl:
+F:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Network.prl:
 F:\Qt\Qt5.8.0\5.8\msvc2015_64\lib\Qt5Core.prl:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\TimeSchedule\TimeSchedule.pro -spec win32-msvc2015 "CONFIG+=debug" "CONFIG+=qml_debug"
