@@ -9,29 +9,29 @@ DataAccessObject::DataAccessObject(QObject *parent) : QObject(parent)
 void DataAccessObject::appendData(QString data){
     QTextStream stream(file);
     if(!file->open(QIODevice::WriteOnly | QIODevice::Text)){
-//        QMessageBox::warning(this, "warning","file open failed", QMessageBox::Yes, QMessageBox::Yes);
+        QMessageBox::warning(NULL, "warning","file open failed", QMessageBox::Yes, QMessageBox::Yes);
 
         return;
     }
     stream<<data;
-//    QMessageBox::information(this, "inform", "add schedule data success");
+    QMessageBox::information(NULL, "inform", "add schedule data success");
 }
 
 void DataAccessObject::appendData(QStringList dataList){
     QTextStream stream(file);
     if(!file->open(QIODevice::WriteOnly | QIODevice::Text)){
-//        QMessageBox::warning(this, "warning","file open failed");
+        QMessageBox::warning(NULL, "warning","file open failed");
         return;
     }
     for(int i = 0; i < dataList.size(); i++){
         stream<<dataList[i];
     }
-//    QMessageBox::information(this, "inform", "add schedule data success");
+    QMessageBox::information(NULL, "inform", "add schedule data success");
 }
 
 void DataAccessObject::deleteAllData(){
     file->remove();
-//    QMessageBox::information(this, "inform", "delete schedule data success");
+    QMessageBox::information(NULL, "inform", "delete schedule data success");
     file->open(QIODevice::WriteOnly);
 }
 
@@ -39,7 +39,7 @@ QList<MISSION> DataAccessObject::loadMissions(){
 
     QList<MISSION> missionList;
     if(!file->open(QIODevice::ReadOnly | QIODevice::Text)){
-//        QMessageBox::warning(this, "warnig","file open failed");
+        QMessageBox::warning(NULL, "warnig","file open failed");
         return missionList;
     }
     QTextStream stream(file);
@@ -55,6 +55,6 @@ QList<MISSION> DataAccessObject::loadMissions(){
         mission.achievePercence = MissionParts[6];
         missionList<<mission;
     }
-
+    QMessageBox::information(NULL, "inform", "load schedule data success");
     return missionList;
 }
