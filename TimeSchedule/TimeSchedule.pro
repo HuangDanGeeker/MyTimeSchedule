@@ -31,7 +31,8 @@ SOURCES += main.cpp\
     timeeditdelegate.cpp \
     datastructs.cpp \
     timeclock.cpp \
-    randomimgcapture.cpp
+    randomimgcapture.cpp \
+    dataaccessobject.cpp
 
 HEADERS  += mainwindow.h \
     hoverwidget.h \
@@ -40,7 +41,8 @@ HEADERS  += mainwindow.h \
     timeeditdelegate.h \
     datastructs.h \
     timeclock.h \
-    randomimgcapture.h
+    randomimgcapture.h \
+    dataaccessobject.h
 
 
 FORMS    += mainwindow.ui \
