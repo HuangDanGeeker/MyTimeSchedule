@@ -15,6 +15,8 @@ public:
     void appendData(QString);
     void appendData(QStringList);
     void deleteAllData();
+    void save(QStringList);
+    void save(QList<MISSION>);
     QList<MISSION> loadMissions();
 signals:
 

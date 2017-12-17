@@ -58,3 +58,28 @@ QList<MISSION> DataAccessObject::loadMissions(){
     QMessageBox::information(NULL, "inform", "load schedule data success");
     return missionList;
 }
+
+
+void DataAccessObject::save(QStringList dataList){
+    file->remove();
+    if(!file->open(QIODevice::WriteOnly | QIODevice::Text)){
+        QMessageBox::warning(NULL, "warning", "file open failed");
+        return;
+    }
+    QTextStream stream(file);
+    for(int i = 0; i < dataList.size(); i++){
+        stream<<dataList[i];
+    }
+}
+
+void DataAccessObject::save(QList<MISSION> dataList){
+    QStringList dataStringList;
+    QString data = "";
+    MISSION mission;
+    for(int i = 0; i < dataList.size(); i++){
+        mission = dataList[i];
+        data = mission.title + " " + mission.remarks +" " + mission.startDate +" "+mission.endDate+" "+mission.infromTime+" "+ mission.achievePercence+"\n";
+        dataStringList<<data;
+    }
+    save(dataStringList);
+}
