@@ -14,7 +14,7 @@ void DataAccessObject::appendData(QString data){
         return;
     }
     stream<<data;
-    QMessageBox::information(NULL, "inform", "add schedule data success");
+//    QMessageBox::information(NULL, "inform", "add schedule data success");
 }
 
 void DataAccessObject::appendData(QStringList dataList){
@@ -26,12 +26,12 @@ void DataAccessObject::appendData(QStringList dataList){
     for(int i = 0; i < dataList.size(); i++){
         stream<<dataList[i];
     }
-    QMessageBox::information(NULL, "inform", "add schedule data success");
+//    QMessageBox::information(NULL, "inform", "add schedule data success");
 }
 
 void DataAccessObject::deleteAllData(){
     file->remove();
-    QMessageBox::information(NULL, "inform", "delete schedule data success");
+//    QMessageBox::information(NULL, "inform", "delete schedule data success");
     file->open(QIODevice::WriteOnly);
 }
 
@@ -49,13 +49,13 @@ QList<MISSION> DataAccessObject::loadMissions(){
         MissionParts =  stream.readLine().split(" ");
         mission.title = MissionParts[0];
         mission.remarks = MissionParts[1];
-        mission.startDate = MissionParts[3];
-        mission.endDate = MissionParts[4];
-        mission.infromTime = MissionParts[5];
-        mission.achievePercence = MissionParts[6];
-        missionList<<mission;
+        mission.startDate = MissionParts[2];
+        mission.endDate = MissionParts[3];
+        mission.infromTime = MissionParts[4];
+        mission.achievePercence = "0";
+        missionList.append(mission);
     }
-    QMessageBox::information(NULL, "inform", "load schedule data success");
+//    QMessageBox::information(NULL, "inform", "load schedule data success");
     return missionList;
 }
 

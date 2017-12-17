@@ -7,12 +7,17 @@
 #include <mainwindow.h>
 #include <QList>
 #include <QTime>
+#include <dataaccessobject.h>
 class TimeClock : public QObject
 {
     Q_OBJECT
 public:
     explicit TimeClock(MainWindow *mainWindow, QObject * parent = 0);
-
+    ~TimeClock(){
+        DataAccessObject dao;
+        dao.deleteAllData();
+        dao.save(missions);
+    }
 private:
     QTimer timer;
     QList<MISSION> missions;

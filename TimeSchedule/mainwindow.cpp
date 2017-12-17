@@ -4,6 +4,7 @@
 #include <processbardelegate.h>
 #include <dateeditdelegate.h>
 #include <timeeditdelegate.h>
+#include <dataaccessobject.h>
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -34,21 +35,38 @@ void MainWindow::initScheduleCalendar(){
 
     ui->ScheduleView->setModel(model);
     ui->ScheduleView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
-    model->setItem(0, 5, new QStandardItem("12"));
+
     ProcessBarDelegate * processBar = new ProcessBarDelegate(this);
     ui->ScheduleView->setItemDelegateForColumn(5, processBar);
 
-    model->setItem(0,2, new QStandardItem("2012-12-12"));
-    model->setItem(0,3, new QStandardItem("2012-12-12"));
     DateEditDelegate * dateEdit = new DateEditDelegate(this);
     ui->ScheduleView->setItemDelegateForColumn(2, dateEdit);
     ui->ScheduleView->setItemDelegateForColumn(3, dateEdit);
 
-    model->setItem(0, 4, new QStandardItem("12:12:12"));
+
     TimeEditDelegate * timeEdit = new TimeEditDelegate(this);
     ui->ScheduleView->setItemDelegateForColumn(4, timeEdit);
 
+    DataAccessObject dao;
+    QList<MISSION> missions = dao.loadMissions();
+    int achievePercent, now2endDays, start2endDays;
+    QDate startDate, endDate;
+    QDate currentDate = QDate::currentDate();
+    for(int i = 0; i < missions.size(); i++){
+        model->setItem(i, 0, new QStandardItem(missions[i].title));
+        model->setItem(i, 1, new QStandardItem(missions[i].remarks));
+        model->setItem(i, 2, new QStandardItem(missions[i].startDate));
+        model->setItem(i, 3, new QStandardItem(missions[i].endDate));
+        model->setItem(i, 4, new QStandardItem(missions[i].infromTime));
 
+        startDate = QDate::fromString(missions[i].startDate, "yyyy-MM-dd");
+        endDate = QDate::fromString(missions[i].endDate, "yyyy-MM-dd");
+        now2endDays = currentDate.daysTo(endDate);
+        start2endDays = startDate.daysTo(endDate);
+        achievePercent = 100 - (int) now2endDays * 100 / start2endDays;
+
+        model->setItem(i, 5, new QStandardItem(QString::number(achievePercent)));
+    }
 }
 
 
