@@ -18,5 +18,6 @@ int main(int argc, char *argv[])
     h.setImgCapture(&capture);
     h.show();
 
+    mainWindow.updateAllMission();
     return a.exec();
 }

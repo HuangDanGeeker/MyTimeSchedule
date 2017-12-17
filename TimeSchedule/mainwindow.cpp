@@ -18,6 +18,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->deleteMissionBtn, SIGNAL(clicked(bool)), this, SLOT(deleteMission()));
     connect(ui->updateMissionBtn, SIGNAL(clicked(bool)), this, SLOT(updateMission()));
     connect(ui->updateAllBtn, SIGNAL(clicked(bool)), this, SLOT(updateAllMission()));
+
 }
 
 MainWindow::~MainWindow()
@@ -66,7 +67,10 @@ void MainWindow::initScheduleCalendar(){
         achievePercent = 100 - (int) now2endDays * 100 / start2endDays;
 
         model->setItem(i, 5, new QStandardItem(QString::number(achievePercent)));
+
+
     }
+
 }
 
 

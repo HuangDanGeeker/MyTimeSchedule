@@ -29,7 +29,7 @@ signals:
     void MissionUpdate(PMISSION mission);
     void MissionUpdateAll(QList<MISSION> missions);
     void MissionDelete(int rowNum);
-private slots:
+public slots:
     void addMission();
     void addMission(PMISSION mission);
     void addMission(QString title, QString remarks, QString startDate, QString endDate, QString infromTime, QString achievePercence);

@@ -10,7 +10,7 @@ TimeClock::TimeClock(MainWindow *mainWindow, QObject * parent) : QObject(parent)
 
     connect(&timer, SIGNAL(timeout()), this, SLOT(checkInform()));
 
-    timer.setInterval(60000 * 10);
+    timer.start(60000 * 10);
 
 }
 
@@ -27,7 +27,7 @@ void TimeClock::MissionUpdate(PMISSION mission){
 
 
 void TimeClock::MissionUpdateAll(QList<MISSION> missions){
-    qDebug()<<"MissionUpdateAll(MISSION missions[], int len)";
+    qDebug()<<"MissionUpdateAll(MISSION missions[])";
     this->missions.clear();
     for(int i = 0; i < missions.size(); i++){
         this->missions.append(missions[i]);
