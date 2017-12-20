@@ -44,8 +44,8 @@ void TimeClock::checkInform(){
     qDebug()<<"checkInform() every time";
     QString currentHours = QTime::currentTime().toString("hh");
     int currentMins = QTime::currentTime().toString("mm").toInt();
-    int minutes = currentMins % 10;
-    QString currentTime = currentHours + ":"+QString::number(minutes);
+    int minutes = (currentMins / 10) * 10;
+    QString currentTime = currentHours + ":"+QString("%1").arg(minutes,2,10,QLatin1Char('0'));
 
     for(int i = 0; i < this->missions.size(); i++){
         if(QString::compare(missions[i].startDate, QDate::currentDate().toString(Qt::ISODate)) <= 0|| 0 == QString::compare(missions[i].startDate, "")){
@@ -56,4 +56,5 @@ void TimeClock::checkInform(){
             }
         }
     }
+
 }

@@ -82,13 +82,13 @@ static const uint qt_meta_data_MainWindow[] = {
        8,    1,   70,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-      10,    0,   73,    2, 0x08 /* Private */,
-      10,    1,   74,    2, 0x08 /* Private */,
-      10,    6,   77,    2, 0x08 /* Private */,
-      17,    0,   90,    2, 0x08 /* Private */,
-      18,    0,   91,    2, 0x08 /* Private */,
-      18,    1,   92,    2, 0x08 /* Private */,
-      19,    0,   95,    2, 0x08 /* Private */,
+      10,    0,   73,    2, 0x0a /* Public */,
+      10,    1,   74,    2, 0x0a /* Public */,
+      10,    6,   77,    2, 0x0a /* Public */,
+      17,    0,   90,    2, 0x0a /* Public */,
+      18,    0,   91,    2, 0x0a /* Public */,
+      18,    1,   92,    2, 0x0a /* Public */,
+      19,    0,   95,    2, 0x0a /* Public */,
 
  // signals: parameters
     QMetaType::Void, 0x80000000 | 3,    4,

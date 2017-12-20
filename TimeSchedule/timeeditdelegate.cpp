@@ -18,13 +18,13 @@ QWidget * TimeEditDelegate::createEditor(QWidget * parent, const QStyleOptionVie
 void TimeEditDelegate::setEditorData(QWidget * editor, const QModelIndex & index) const{
     QString time = index.model()->data(index, Qt::EditRole).toString();
     QTimeEdit * dateEdit = static_cast<QTimeEdit*> (editor);
-    dateEdit->setTime(QTime::fromString(time, "HH-mm"));
+    dateEdit->setTime(QTime::fromString(time, "HH:mm"));
 }
 
 //将widget的数据展示到Item中
 void TimeEditDelegate::setModelData(QWidget * editor, QAbstractItemModel * model, const QModelIndex & index) const{
     QTimeEdit * timeEdit = static_cast<QTimeEdit*> (editor);
-    QString time = timeEdit->time().toString("HH-mm");
+    QString time = timeEdit->time().toString("HH:mm");
     model->setData(index, QVariant(time));
 }
 
