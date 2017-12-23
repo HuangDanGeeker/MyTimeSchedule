@@ -7,7 +7,7 @@ DateEditDelegate::DateEditDelegate(QObject * parent) :QItemDelegate(parent)
 
 QWidget * DateEditDelegate::createEditor(QWidget * parent, const QStyleOptionViewItem & option, const QModelIndex & index) const{
 
-    QDateEdit * dateEdit = new QDateEdit(QDate::currentDate());
+    QDateEdit * dateEdit = new QDateEdit(parent);
     dateEdit->setCalendarPopup(true);
     return dateEdit;
 }

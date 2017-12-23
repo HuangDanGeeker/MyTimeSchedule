@@ -1,6 +1,7 @@
 #include "timeeditdelegate.h"
 #include <QTime>
 #include <QTimeEdit>
+
 TimeEditDelegate::TimeEditDelegate(QObject * parten) : QItemDelegate(parten)
 {
 
@@ -9,8 +10,10 @@ TimeEditDelegate::TimeEditDelegate(QObject * parten) : QItemDelegate(parten)
 
 QWidget * TimeEditDelegate::createEditor(QWidget * parent, const QStyleOptionViewItem & option, const QModelIndex & index) const{
 
-    QTimeEdit * timeEdit = new QTimeEdit(QTime::currentTime());
+    QTimeEdit * timeEdit = new QTimeEdit(parent);
+    timeEdit->setDisplayFormat("yyyy-MM-dd");
     timeEdit->setCalendarPopup(true);
+//    timeEdit->installEventFilter(const_cast<TimeEditDelegate*>(this));
     return timeEdit;
 }
 
@@ -29,6 +32,8 @@ void TimeEditDelegate::setModelData(QWidget * editor, QAbstractItemModel * model
 }
 
 //确保widget能够正确显示到view中
-//void TimeEditDelegate::updateEditorGeometry(QWidget * editor, const QStyleOptionViewItem & option, const QModelIndex & index) const{
-//    return;
-//}
+void TimeEditDelegate::updateEditorGeometry(QWidget *editor,
+        const QStyleOptionViewItem &option, const QModelIndex &index) const
+    {
+        editor->setGeometry(option.rect);
+    }

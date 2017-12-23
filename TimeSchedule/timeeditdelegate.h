@@ -16,6 +16,8 @@ public:
 
     //将widget的数据展示到Item中
     void setModelData(QWidget * editor, QAbstractItemModel * model, const QModelIndex & index) const;
+
+    void updateEditorGeometry(QWidget *editor, const QStyleOptionViewItem &option, const QModelIndex &index) const;
 };
 
 #endif // TIMEEDITDELEGATE_H
