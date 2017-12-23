@@ -13,6 +13,7 @@ TimeClock::TimeClock(MainWindow *mainWindow, QObject * parent) : QObject(parent)
 
     timer.start(60000 * 10);
 
+
 }
 
 void TimeClock::setMainWindow(MainWindow *mainWindow){

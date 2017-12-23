@@ -13,7 +13,8 @@ RandomImgCapture::RandomImgCapture(QWidget *parent) :
     connect(ui->saveBtn, SIGNAL(clicked(bool)),this, SLOT(save()));
     connect(ui->notSaveBtn, SIGNAL(clicked(bool)),this, SLOT(notSave()));
 
-    this->timer = new QTimer();
+    this->captureTimer = new QTimer();
+    this->autoSaveTimer = new QTimer();
     this->camera = new QCamera();
     this->imageCapture = new QCameraImageCapture(camera);
 
@@ -21,8 +22,11 @@ RandomImgCapture::RandomImgCapture(QWidget *parent) :
     this->camera->setCaptureMode(QCamera::CaptureStillImage);
 
     connect(this->imageCapture, SIGNAL(imageCaptured(int,QImage)), this, SLOT(capture(int, QImage)));
-    connect(this->timer, SIGNAL(timeout()), this, SLOT(startCapture()));
-    timer->start(60000 * 60);
+    connect(this->captureTimer, SIGNAL(timeout()), this, SLOT(startCapture()));
+    connect(this->autoSaveTimer, SIGNAL(timeout()), this, SLOT(autoSave()));
+    captureTimer->start(60000 * 60);
+
+    isSaved = false;
 }
 
 RandomImgCapture::~RandomImgCapture()
@@ -35,6 +39,7 @@ void RandomImgCapture::save(){
     const QPixmap *pixmap = ui->imageLabel->pixmap();
     qDebug()<<"capture saved :"<<pixmap->save("./CapturedImgs/"+QDate::currentDate().toString("yy_MM_dd_")+QTime::currentTime().toString("hhmmss")+".jpg", "JPG");
     this->hide();
+    autoSaveTimer->stop();
 }
 
 void RandomImgCapture::notSave(){
@@ -48,6 +53,7 @@ void RandomImgCapture::capture(int id, QImage image){
     ui->imageLabel->setPixmap(QPixmap::fromImage(image));
     this->show();
     this->camera->stop();
+    autoSaveTimer->start(3 * 60000);
 }
 
 
@@ -55,6 +61,13 @@ void RandomImgCapture::startCapture(){
     this->camera->start();
     this->imageCapture->capture();
     flag++;
-    this->timer->setInterval(60000 * 60 * this->fibonacci[flag]);
+    this->captureTimer->setInterval(60000 * 60 * this->fibonacci[flag]);
 
+}
+
+void RandomImgCapture::autoSave(){
+    const QPixmap *pixmap = ui->imageLabel->pixmap();
+    qDebug()<<"capture saved :"<<pixmap->save("./CapturedImgs/"+QDate::currentDate().toString("yy_MM_dd_")+QTime::currentTime().toString("hhmmss")+".jpg", "JPG");
+    this->hide();
+    autoSaveTimer->stop();
 }

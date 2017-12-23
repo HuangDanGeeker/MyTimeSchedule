@@ -24,15 +24,18 @@ public:
 private:
     Ui::RandomImgCapture *ui;
     QCamera *camera;
-    QTimer *timer;
+    QTimer *captureTimer;
+    QTimer *autoSaveTimer;
     QCameraImageCapture * imageCapture;
     int flag = 0;
     int fibonacci[12] = {1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144};
+    bool isSaved;
 private slots:
     void save();
     void notSave();
     void capture(int, QImage);
     void startCapture();
+    void autoSave();
 };
 
 #endif // RANDOMIMGCAPTURE_H

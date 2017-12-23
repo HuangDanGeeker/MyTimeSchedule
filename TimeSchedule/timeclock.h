@@ -29,6 +29,7 @@ private slots:
     void MissionUpdateAll(QList<MISSION> missions);
     void MissionDelete(int rowNum);
     void checkInform();
+
 };
 
 #endif // TIMECLOCK_H
