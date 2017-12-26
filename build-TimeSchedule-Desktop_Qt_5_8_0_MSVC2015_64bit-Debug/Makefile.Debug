@@ -1015,7 +1015,9 @@ debug\main.obj: ..\TimeSchedule\main.cpp ../TimeSchedule/mainwindow.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLabel \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlabel.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qframe.h \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QPixmap
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QPixmap \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QSettings \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qsettings.h
 
 debug\mainwindow.obj: ..\TimeSchedule\mainwindow.cpp ../TimeSchedule/mainwindow.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMainWindow \

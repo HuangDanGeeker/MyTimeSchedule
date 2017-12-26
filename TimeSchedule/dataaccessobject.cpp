@@ -1,9 +1,10 @@
 #include "dataaccessobject.h"
 #include <QMessageBox>
-
+#include <QDebug>
 DataAccessObject::DataAccessObject(QObject *parent) : QObject(parent)
 {
     file = new QFile(fileName);
+
 }
 
 void DataAccessObject::appendData(QString data){
