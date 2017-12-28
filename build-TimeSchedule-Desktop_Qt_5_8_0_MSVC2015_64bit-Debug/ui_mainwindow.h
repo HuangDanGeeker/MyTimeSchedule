@@ -14,12 +14,14 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QTableView>
+#include <QtWidgets/QTimeEdit>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 
@@ -37,6 +39,9 @@ public:
     QPushButton *updateMissionBtn;
     QPushButton *updateAllBtn;
     QWidget *RecordTab;
+    QWidget *tab;
+    QTimeEdit *timeEdit;
+    QLabel *label;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -80,6 +85,23 @@ public:
         QIcon icon1;
         icon1.addFile(QStringLiteral(":/imgs/res/innerIcons/Universal Binary.png"), QSize(), QIcon::Active, QIcon::On);
         tabWidget->addTab(RecordTab, icon1, QString());
+        tab = new QWidget();
+        tab->setObjectName(QStringLiteral("tab"));
+        timeEdit = new QTimeEdit(tab);
+        timeEdit->setObjectName(QStringLiteral("timeEdit"));
+        timeEdit->setGeometry(QRect(150, 40, 121, 31));
+        QFont font1;
+        font1.setFamily(QStringLiteral("Academy Engraved LET"));
+        font1.setPointSize(11);
+        timeEdit->setFont(font1);
+        label = new QLabel(tab);
+        label->setObjectName(QStringLiteral("label"));
+        label->setGeometry(QRect(40, 40, 121, 31));
+        QFont font2;
+        font2.setFamily(QStringLiteral("Adobe Arabic"));
+        font2.setPointSize(12);
+        label->setFont(font2);
+        tabWidget->addTab(tab, QString());
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -94,7 +116,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -109,6 +131,8 @@ public:
         updateAllBtn->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(ScheduleTab), QApplication::translate("MainWindow", "Schedule", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(RecordTab), QApplication::translate("MainWindow", "Record", Q_NULLPTR));
+        label->setText(QApplication::translate("MainWindow", "\345\256\232\346\227\266\345\205\263\346\234\272\346\227\266\351\227\264", Q_NULLPTR));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "Page", Q_NULLPTR));
     } // retranslateUi
 
 };
