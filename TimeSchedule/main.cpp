@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
     RandomImgCapture capture;
     MainWindow mainWindow;
     TimeClock timeClock(&mainWindow, 0);
+    mainWindow.initProperties();
     HoverWidget h;
     h.setMainWindow(&mainWindow);
     h.setTimeClock(&timeClock);

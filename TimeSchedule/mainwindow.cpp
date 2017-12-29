@@ -18,6 +18,8 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->deleteMissionBtn, SIGNAL(clicked(bool)), this, SLOT(deleteMission()));
     connect(ui->updateMissionBtn, SIGNAL(clicked(bool)), this, SLOT(updateMission()));
     connect(ui->updateAllBtn, SIGNAL(clicked(bool)), this, SLOT(updateAllMission()));
+    connect(ui->AbortTerminateBtn, SIGNAL(clicked(bool)), this, SLOT(abortTerminateSlot()));
+    connect(ui->terminateTimeEdit, SIGNAL(timeChanged(QTime)), this, SLOT(setTerminateTimeSlot(QTime)));
 
 }
 
@@ -95,6 +97,12 @@ void MainWindow::initBtn(){
     ui->updateAllBtn->setIcon(icon);
     ui->updateAllBtn->setFixedSize(icon.size());
     ui->updateAllBtn->setToolTip("update all missions");
+}
+
+void MainWindow::initProperties(){
+
+    QTime time = ui->terminateTimeEdit->time();
+    emit SetTerminateTime(time);
 }
 
 void MainWindow::closeEvent(QCloseEvent *e){
@@ -177,6 +185,13 @@ void MainWindow::updateAllMission(){
     }
     emit MissionUpdateAll(missions);
 
+}
+
+void MainWindow::abortTerminateSlot(){
+    emit AbortTerminate();
+}
+void MainWindow::setTerminateTimeSlot(QTime time){
+    emit SetTerminateTime(time);
 }
 
 void MainWindow::updateMission(){

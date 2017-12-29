@@ -116,7 +116,7 @@
       <string>Record</string>
      </attribute>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="widget">
      <attribute name="title">
       <string>Properties</string>
      </attribute>
@@ -139,7 +139,7 @@
        <string>定时关机时间</string>
       </property>
      </widget>
-     <widget class="QTimeEdit" name="timeEdit">
+     <widget class="QTimeEdit" name="terminateTimeEdit">
       <property name="geometry">
        <rect>
         <x>150</x>
@@ -160,6 +160,24 @@
       </property>
       <property name="calendarPopup">
        <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="AbortTerminateBtn">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>40</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Abort</string>
       </property>
      </widget>
     </widget>

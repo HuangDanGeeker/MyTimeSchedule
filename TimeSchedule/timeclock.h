@@ -8,6 +8,7 @@
 #include <QList>
 #include <QTime>
 #include <dataaccessobject.h>
+#include <QProcess>
 class TimeClock : public QObject
 {
     Q_OBJECT
@@ -23,12 +24,16 @@ private:
     QList<MISSION> missions;
     MainWindow * mainWindow;
     void setMainWindow(MainWindow *);
-
+    bool isTerminate;
+    QTime terminateTime;
+    QProcess *process;
 private slots:
     void MissionUpdate(PMISSION mission);
     void MissionUpdateAll(QList<MISSION> missions);
     void MissionDelete(int rowNum);
     void checkInform();
+    void SetTerminateTime(QTime);
+    void AbortTerminate();
 
 };
 
