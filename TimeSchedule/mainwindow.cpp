@@ -20,6 +20,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->updateAllBtn, SIGNAL(clicked(bool)), this, SLOT(updateAllMission()));
     connect(ui->AbortTerminateBtn, SIGNAL(clicked(bool)), this, SLOT(abortTerminateSlot()));
     connect(ui->terminateTimeEdit, SIGNAL(timeChanged(QTime)), this, SLOT(setTerminateTimeSlot(QTime)));
+    connect(ui->PauseTerminateBtn, SIGNAL(clicked(bool)), this, SLOT(pauseTerminateTimeSlot()));
 
 }
 
@@ -191,6 +192,10 @@ void MainWindow::abortTerminateSlot(){
     emit AbortTerminate();
 }
 void MainWindow::setTerminateTimeSlot(QTime time){
+    emit SetTerminateTime(time);
+}
+void MainWindow::pauseTerminateTimeSlot(){
+    QTime time = ui->terminateTimeEdit->time().addSecs(15 * 60);
     emit SetTerminateTime(time);
 }
 

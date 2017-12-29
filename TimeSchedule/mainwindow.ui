@@ -165,6 +165,27 @@
      <widget class="QPushButton" name="AbortTerminateBtn">
       <property name="geometry">
        <rect>
+        <x>360</x>
+        <y>40</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="text">
+       <string>Abort</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="PauseTerminateBtn">
+      <property name="geometry">
+       <rect>
         <x>270</x>
         <y>40</y>
         <width>75</width>
@@ -176,8 +197,11 @@
         <pointsize>11</pointsize>
        </font>
       </property>
+      <property name="toolTip">
+       <string>pause for 15 mins</string>
+      </property>
       <property name="text">
-       <string>Abort</string>
+       <string>Pause</string>
       </property>
      </widget>
     </widget>

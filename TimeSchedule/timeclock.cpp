@@ -50,7 +50,7 @@ void TimeClock::SetTerminateTime(QTime time){
     process->start("shutdown /s /t "+QString::number(secondsTo));
     process->waitForStarted();
     process->waitForFinished();
-    qDebug()<<QString::fromLocal8Bit(process->readAllStandardOutput());
+//    qDebug()<<QString::fromLocal8Bit(process->readAllStandardOutput());
 }
 
 void TimeClock::AbortTerminate(){
@@ -58,7 +58,7 @@ void TimeClock::AbortTerminate(){
     process->start("shutdown /a");
     process->waitForStarted();
     process->waitForFinished();
-    qDebug()<<QString::fromLocal8Bit(process->readAllStandardOutput());
+//    qDebug()<<QString::fromLocal8Bit(process->readAllStandardOutput());
 }
 
 void TimeClock::MissionDelete(int rowNum){

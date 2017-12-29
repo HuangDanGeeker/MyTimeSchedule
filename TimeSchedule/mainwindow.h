@@ -33,6 +33,7 @@ signals:
     void MissionDelete(int rowNum);
     void AbortTerminate();
     void SetTerminateTime(QTime);
+    void PauseTerminateTime();
 public slots:
     void addMission();
     void addMission(PMISSION mission);
@@ -43,6 +44,7 @@ public slots:
     void updateAllMission();
     void abortTerminateSlot();
     void setTerminateTimeSlot(QTime);
+    void pauseTerminateTimeSlot();
 
 
 };
