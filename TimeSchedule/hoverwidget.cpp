@@ -22,7 +22,12 @@ HoverWidget::HoverWidget(QWidget *parent) :
     ui->label->setPixmap(QPixmap::fromImage(image.scaled(desktopWidth*0.07, desktopHeight*0.07, Qt::KeepAspectRatio)));
     ui->label->resize(image.size());
 
+
+    initCountDownBar();
+
     ui->label->show();
+
+
 
     //图标右上角悬浮
     QDesktopWidget* desktop=QApplication::desktop();//获取屏幕尺寸
@@ -35,6 +40,25 @@ HoverWidget::HoverWidget(QWidget *parent) :
 HoverWidget::~HoverWidget()
 {
     delete ui;
+}
+
+void HoverWidget::initCountDownBar(){
+    ui->CountDownBar->setGeometry(ui->label->x(), ui->label->y()+110, ui->CountDownBar->width()-65, ui->CountDownBar->height());
+    int totalDays = QDate(2018,1,1).daysTo(QDate(2018,3,10));
+    int leftDays = QDate::currentDate().daysTo(QDate(2018,3,10));
+    int value = (leftDays * 100 / totalDays);
+    ui->CountDownBar->setValue(value);
+    if(value < 10){
+        ui->CountDownBar->setStyleSheet("QProgressBar::chunk { background-color: #d9534f }");
+    }else if(value <= 40){
+        ui->CountDownBar->setStyleSheet("QProgressBar::chunk { background-color: #f0ad4e }");
+    }else if(value <= 60){
+        ui->CountDownBar->setStyleSheet("QProgressBar::chunk { background-color: #337ab7 }");
+    }else if(value <= 80){
+        ui->CountDownBar->setStyleSheet("QProgressBar::chunk { background-color: #5bc0de }");
+    }else{
+        ui->CountDownBar->setStyleSheet("QProgressBar::chunk { background-color: #5cb85c }");
+    }
 }
 
 void HoverWidget::exit(){

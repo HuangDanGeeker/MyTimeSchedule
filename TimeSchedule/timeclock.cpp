@@ -41,7 +41,6 @@ void TimeClock::MissionUpdateAll(QList<MISSION> missions){
 }
 
 void TimeClock::SetTerminateTime(QTime time){
-    qDebug()<<"hereerere";
     this->terminateTime = time;
     this->isTerminate = true;
     int secondsTo = QTime::currentTime().secsTo(time);

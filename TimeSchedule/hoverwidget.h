@@ -32,6 +32,7 @@ private:
     RandomImgCapture * imgCapture;
     QApplication *application;
     QMenu menue;
+    void initCountDownBar();
 private slots:
     void exit();
     void displayMainWindow();
