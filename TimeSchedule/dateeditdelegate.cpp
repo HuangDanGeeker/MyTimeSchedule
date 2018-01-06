@@ -8,6 +8,7 @@ DateEditDelegate::DateEditDelegate(QObject * parent) :QItemDelegate(parent)
 QWidget * DateEditDelegate::createEditor(QWidget * parent, const QStyleOptionViewItem & option, const QModelIndex & index) const{
 
     QDateEdit * dateEdit = new QDateEdit(parent);
+    dateEdit->setDate(QDate::currentDate());
     dateEdit->setCalendarPopup(true);
     return dateEdit;
 }
@@ -16,7 +17,12 @@ QWidget * DateEditDelegate::createEditor(QWidget * parent, const QStyleOptionVie
 void DateEditDelegate::setEditorData(QWidget * editor, const QModelIndex & index) const{
     QString date = index.model()->data(index, Qt::EditRole).toString();
     QDateEdit * dateEdit = static_cast<QDateEdit*> (editor);
-    dateEdit->setDate(QDate::fromString(date, "yyyy-mm-dd"));
+    if(date == "" || date == NULL){
+        dateEdit->setDate(QDate::currentDate());
+    }else{
+        dateEdit->setDate(QDate::fromString(date, "yyyy-mm-dd"));
+    }
+
 }
 
 //将widget的数据展示到Item中

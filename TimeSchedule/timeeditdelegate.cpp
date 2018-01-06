@@ -12,6 +12,7 @@ QWidget * TimeEditDelegate::createEditor(QWidget * parent, const QStyleOptionVie
 
     QTimeEdit * timeEdit = new QTimeEdit(parent);
     timeEdit->setDisplayFormat("yyyy-MM-dd");
+    timeEdit->setTime(QTime::currentTime());
     timeEdit->setCalendarPopup(true);
 //    timeEdit->installEventFilter(const_cast<TimeEditDelegate*>(this));
     return timeEdit;
@@ -20,8 +21,15 @@ QWidget * TimeEditDelegate::createEditor(QWidget * parent, const QStyleOptionVie
 
 void TimeEditDelegate::setEditorData(QWidget * editor, const QModelIndex & index) const{
     QString time = index.model()->data(index, Qt::EditRole).toString();
+
     QTimeEdit * dateEdit = static_cast<QTimeEdit*> (editor);
-    dateEdit->setTime(QTime::fromString(time, "HH:mm"));
+    if(time == "" || time == NULL){
+        dateEdit->setTime(QTime::currentTime());
+    }
+    else{
+        dateEdit->setTime(QTime::fromString(time, "HH:mm"));
+    }
+
 }
 
 //将widget的数据展示到Item中
