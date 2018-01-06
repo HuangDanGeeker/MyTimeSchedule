@@ -39,9 +39,11 @@ public:
     QPushButton *updateMissionBtn;
     QPushButton *updateAllBtn;
     QWidget *RecordTab;
-    QWidget *tab;
-    QTimeEdit *timeEdit;
+    QWidget *widget;
     QLabel *label;
+    QTimeEdit *terminateTimeEdit;
+    QPushButton *AbortTerminateBtn;
+    QPushButton *PauseTerminateBtn;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -85,23 +87,31 @@ public:
         QIcon icon1;
         icon1.addFile(QStringLiteral(":/imgs/res/innerIcons/Universal Binary.png"), QSize(), QIcon::Active, QIcon::On);
         tabWidget->addTab(RecordTab, icon1, QString());
-        tab = new QWidget();
-        tab->setObjectName(QStringLiteral("tab"));
-        timeEdit = new QTimeEdit(tab);
-        timeEdit->setObjectName(QStringLiteral("timeEdit"));
-        timeEdit->setGeometry(QRect(150, 40, 121, 31));
-        QFont font1;
-        font1.setFamily(QStringLiteral("Academy Engraved LET"));
-        font1.setPointSize(11);
-        timeEdit->setFont(font1);
-        label = new QLabel(tab);
+        widget = new QWidget();
+        widget->setObjectName(QStringLiteral("widget"));
+        label = new QLabel(widget);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(40, 40, 121, 31));
+        QFont font1;
+        font1.setFamily(QStringLiteral("Adobe Arabic"));
+        font1.setPointSize(12);
+        label->setFont(font1);
+        terminateTimeEdit = new QTimeEdit(widget);
+        terminateTimeEdit->setObjectName(QStringLiteral("terminateTimeEdit"));
+        terminateTimeEdit->setGeometry(QRect(150, 40, 101, 22));
+        terminateTimeEdit->setDateTime(QDateTime(QDate(2000, 1, 1), QTime(1, 0, 0)));
+        terminateTimeEdit->setCalendarPopup(true);
+        AbortTerminateBtn = new QPushButton(widget);
+        AbortTerminateBtn->setObjectName(QStringLiteral("AbortTerminateBtn"));
+        AbortTerminateBtn->setGeometry(QRect(360, 40, 75, 23));
         QFont font2;
-        font2.setFamily(QStringLiteral("Adobe Arabic"));
-        font2.setPointSize(12);
-        label->setFont(font2);
-        tabWidget->addTab(tab, QString());
+        font2.setPointSize(11);
+        AbortTerminateBtn->setFont(font2);
+        PauseTerminateBtn = new QPushButton(widget);
+        PauseTerminateBtn->setObjectName(QStringLiteral("PauseTerminateBtn"));
+        PauseTerminateBtn->setGeometry(QRect(270, 40, 75, 23));
+        PauseTerminateBtn->setFont(font2);
+        tabWidget->addTab(widget, QString());
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -132,7 +142,15 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(ScheduleTab), QApplication::translate("MainWindow", "Schedule", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(RecordTab), QApplication::translate("MainWindow", "Record", Q_NULLPTR));
         label->setText(QApplication::translate("MainWindow", "\345\256\232\346\227\266\345\205\263\346\234\272\346\227\266\351\227\264", Q_NULLPTR));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "Page", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        AbortTerminateBtn->setToolTip(QString());
+#endif // QT_NO_TOOLTIP
+        AbortTerminateBtn->setText(QApplication::translate("MainWindow", "Abort", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        PauseTerminateBtn->setToolTip(QApplication::translate("MainWindow", "pause for 15 mins", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
+        PauseTerminateBtn->setText(QApplication::translate("MainWindow", "Pause", Q_NULLPTR));
+        tabWidget->setTabText(tabWidget->indexOf(widget), QApplication::translate("MainWindow", "Properties", Q_NULLPTR));
     } // retranslateUi
 
 };

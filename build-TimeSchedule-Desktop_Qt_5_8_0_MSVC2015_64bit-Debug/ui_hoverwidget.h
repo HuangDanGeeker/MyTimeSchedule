@@ -15,6 +15,7 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QProgressBar>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -22,16 +23,21 @@ QT_BEGIN_NAMESPACE
 class Ui_HoverWidget
 {
 public:
+    QProgressBar *CountDownBar;
     QLabel *label;
 
     void setupUi(QWidget *HoverWidget)
     {
         if (HoverWidget->objectName().isEmpty())
             HoverWidget->setObjectName(QStringLiteral("HoverWidget"));
-        HoverWidget->resize(324, 179);
+        HoverWidget->resize(383, 259);
+        CountDownBar = new QProgressBar(HoverWidget);
+        CountDownBar->setObjectName(QStringLiteral("CountDownBar"));
+        CountDownBar->setGeometry(QRect(30, 130, 118, 23));
+        CountDownBar->setValue(24);
         label = new QLabel(HoverWidget);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(10, 10, 271, 131));
+        label->setGeometry(QRect(40, 20, 151, 81));
 
         retranslateUi(HoverWidget);
 

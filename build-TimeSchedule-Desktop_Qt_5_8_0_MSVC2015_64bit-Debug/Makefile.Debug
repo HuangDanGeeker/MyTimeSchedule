@@ -461,6 +461,13 @@ debug\moc_hoverwidget.cpp: F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidg
 		..\TimeSchedule\dataaccessobject.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QFile \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QTextStream \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QApplication \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qapplication.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qcoreapplication.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qeventloop.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdesktopwidget.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qguiapplication.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qinputmethod.h \
 		..\TimeSchedule\randomimgcapture.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QDialog \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdialog.h \
@@ -612,6 +619,13 @@ debug\moc_timeclock.cpp: F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QObject \
 		..\TimeSchedule\dataaccessobject.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QFile \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QTextStream \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QApplication \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qapplication.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qcoreapplication.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qeventloop.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdesktopwidget.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qguiapplication.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qinputmethod.h \
 		..\TimeSchedule\timeclock.h \
 		debug\moc_predefs.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe
@@ -820,6 +834,50 @@ debug\moc_dataaccessobject.cpp: F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QOb
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qsharedpointer_impl.h \
 		..\TimeSchedule\datastructs.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QString \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QApplication \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qapplication.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtwidgetsglobal.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtguiglobal.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtgui-config.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtwidgets-config.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qcoreapplication.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qeventloop.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qwindowdefs.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qwindowdefs_win.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qsize.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qcursor.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdesktopwidget.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qwidget.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qmargins.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpaintdevice.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qrect.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpalette.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qcolor.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qrgb.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qrgba64.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qbrush.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qmatrix.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpolygon.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qregion.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qdatastream.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qline.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtransform.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpainterpath.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qimage.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpixelformat.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpixmap.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qfont.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qfontmetrics.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qfontinfo.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qsizepolicy.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qkeysequence.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qevent.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qurl.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qurlquery.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvector2d.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtouchdevice.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qguiapplication.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qinputmethod.h \
 		..\TimeSchedule\dataaccessobject.h \
 		debug\moc_predefs.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe
@@ -1158,6 +1216,8 @@ debug\mainwindow.obj: ..\TimeSchedule\mainwindow.cpp ../TimeSchedule/mainwindow.
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyle.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtabbar.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qrubberband.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLabel \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlabel.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenuBar \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenubar.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenu.h \
@@ -1169,6 +1229,9 @@ debug\mainwindow.obj: ..\TimeSchedule\mainwindow.cpp ../TimeSchedule/mainwindow.
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTabWidget \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTableView \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtableview.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTimeEdit \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdatetimeedit.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qdatetime.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QToolBar \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtoolbar.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
@@ -1180,9 +1243,7 @@ debug\mainwindow.obj: ..\TimeSchedule\mainwindow.cpp ../TimeSchedule/mainwindow.
 		../TimeSchedule/dateeditdelegate.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QObject \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QDate \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qdatetime.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QDateEdit \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdatetimeedit.h \
 		../TimeSchedule/timeeditdelegate.h \
 		../TimeSchedule/dataaccessobject.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QFile \
@@ -1315,6 +1376,13 @@ debug\hoverwidget.obj: ..\TimeSchedule\hoverwidget.cpp ../TimeSchedule/hoverwidg
 		../TimeSchedule/dataaccessobject.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QFile \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QTextStream \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QApplication \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qapplication.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qcoreapplication.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qeventloop.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdesktopwidget.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qguiapplication.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qinputmethod.h \
 		../TimeSchedule/randomimgcapture.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QDialog \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdialog.h \
@@ -1345,13 +1413,6 @@ debug\hoverwidget.obj: ..\TimeSchedule\hoverwidget.cpp ../TimeSchedule/hoverwidg
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QPixmap \
 		ui_hoverwidget.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QVariant \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QApplication \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qapplication.h \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qcoreapplication.h \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qeventloop.h \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdesktopwidget.h \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qguiapplication.h \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qinputmethod.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QButtonGroup \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qbuttongroup.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHeaderView \
@@ -1899,7 +1960,14 @@ debug\timeclock.obj: ..\TimeSchedule\timeclock.cpp ../TimeSchedule/timeclock.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qdatetime.h \
 		../TimeSchedule/dataaccessobject.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QFile \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QTextStream
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QTextStream \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QApplication \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qapplication.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qcoreapplication.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qeventloop.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdesktopwidget.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qguiapplication.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qinputmethod.h
 
 debug\randomimgcapture.obj: ..\TimeSchedule\randomimgcapture.cpp ../TimeSchedule/randomimgcapture.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QDialog \
@@ -2140,20 +2208,23 @@ debug\dataaccessobject.obj: ..\TimeSchedule\dataaccessobject.cpp ../TimeSchedule
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qsharedpointer_impl.h \
 		../TimeSchedule/datastructs.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QString \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMessageBox \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmessagebox.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QApplication \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qapplication.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtwidgetsglobal.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtguiglobal.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtgui-config.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtwidgets-config.h \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdialog.h \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qwidget.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qcoreapplication.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qeventloop.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qwindowdefs.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qwindowdefs_win.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qsize.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qcursor.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdesktopwidget.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qwidget.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qmargins.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpaintdevice.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qrect.h \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qsize.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpalette.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qcolor.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qrgb.h \
@@ -2173,13 +2244,18 @@ debug\dataaccessobject.obj: ..\TimeSchedule\dataaccessobject.cpp ../TimeSchedule
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qfontmetrics.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qfontinfo.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qsizepolicy.h \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qcursor.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qkeysequence.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qevent.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qurl.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\qurlquery.h \
 		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvector2d.h \
-		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtouchdevice.h
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtouchdevice.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qguiapplication.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qinputmethod.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMessageBox \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmessagebox.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdialog.h \
+		F:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QDebug
 
 debug\qrc_res.obj: debug\qrc_res.cpp 
 

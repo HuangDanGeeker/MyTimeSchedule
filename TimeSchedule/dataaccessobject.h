@@ -6,6 +6,8 @@
 #include <QTextStream>
 #include <datastructs.h>
 #include <QApplication>
+#include <QDate>
+#include <QTime>
 class DataAccessObject : public QObject
 {
     Q_OBJECT

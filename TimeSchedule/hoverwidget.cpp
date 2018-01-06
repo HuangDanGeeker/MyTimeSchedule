@@ -48,6 +48,10 @@ void HoverWidget::initCountDownBar(){
     int leftDays = QDate::currentDate().daysTo(QDate(2018,3,10));
     int value = (leftDays * 100 / totalDays);
     ui->CountDownBar->setValue(value);
+
+    //设置tooltip 失败
+//    QString toolTipText = QString::number(value)+"% left";
+    ui->CountDownBar->setToolTip("ssssssssss");
     if(value < 10){
         ui->CountDownBar->setStyleSheet("QProgressBar::chunk { background-color: #d9534f }");
     }else if(value <= 40){

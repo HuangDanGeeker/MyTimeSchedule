@@ -79,6 +79,17 @@ void DataAccessObject::save(QList<MISSION> dataList){
     MISSION mission;
     for(int i = 0; i < dataList.size(); i++){
         mission = dataList[i];
+        if(mission.title == NULL)
+            mission.title = "#";
+        if(mission.remarks == NULL)
+            mission.remarks = "#";
+        if(mission.startDate == NULL)
+            mission.startDate = QDate::currentDate().toString("yyyy-MM-dd");
+        if(mission.endDate == NULL)
+            mission.endDate = QDate::currentDate().addDays(1).toString("yyyy-MM-dd");
+        if(mission.infromTime == NULL)
+            mission.infromTime = QTime::currentTime().toString("HH:mm");
+        mission.achievePercence = "-1";
         data = mission.title + " " + mission.remarks +" " + mission.startDate +" "+mission.endDate+" "+mission.infromTime+" "+ mission.achievePercence+"\n";
         dataStringList<<data;
     }
