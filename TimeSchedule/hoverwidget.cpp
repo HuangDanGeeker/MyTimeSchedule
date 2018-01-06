@@ -107,7 +107,7 @@ void HoverWidget::contextMenuEvent(QContextMenuEvent *event){
 void HoverWidget::createMenue(){
 
     QAction *showOrHideMainWndwAction = new QAction(this);
-    showOrHideMainWndwAction->setText("show/hide MainWindow");
+    showOrHideMainWndwAction->setText("MainWindow");
     QAction *exitAction = new QAction(this);
     exitAction->setText("exit");
 
