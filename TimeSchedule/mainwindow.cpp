@@ -29,6 +29,14 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::setTabWidgetIndex(int n){
+    ui->tabWidget->setCurrentIndex(n);
+}
+
+void MainWindow::setInformWidgetText(QString title, QString remarks){
+    ui->titleEdit->setText(title);
+    ui->remarkEdit->setText(remarks);
+}
 
 void MainWindow::initScheduleCalendar(){
 

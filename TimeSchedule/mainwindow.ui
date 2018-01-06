@@ -22,8 +22,8 @@
      <rect>
       <x>0</x>
       <y>10</y>
-      <width>671</width>
-      <height>321</height>
+      <width>661</width>
+      <height>301</height>
      </rect>
     </property>
     <property name="font">
@@ -32,7 +32,7 @@
      </font>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="ScheduleTab">
      <attribute name="icon">
@@ -115,6 +115,26 @@
      <attribute name="title">
       <string>Record</string>
      </attribute>
+     <widget class="QTextEdit" name="titleEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>40</y>
+        <width>331</width>
+        <height>71</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="remarkEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>150</y>
+        <width>331</width>
+        <height>71</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="widget">
      <attribute name="title">

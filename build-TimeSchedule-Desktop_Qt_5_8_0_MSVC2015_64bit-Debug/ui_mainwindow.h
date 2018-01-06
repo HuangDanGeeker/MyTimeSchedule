@@ -21,6 +21,7 @@
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QTableView>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QTimeEdit>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
@@ -39,6 +40,8 @@ public:
     QPushButton *updateMissionBtn;
     QPushButton *updateAllBtn;
     QWidget *RecordTab;
+    QTextEdit *titleEdit;
+    QTextEdit *remarkEdit;
     QWidget *widget;
     QLabel *label;
     QTimeEdit *terminateTimeEdit;
@@ -58,7 +61,7 @@ public:
         tabWidget = new QTabWidget(centralWidget);
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
         tabWidget->setEnabled(true);
-        tabWidget->setGeometry(QRect(0, 10, 671, 321));
+        tabWidget->setGeometry(QRect(0, 10, 661, 301));
         QFont font;
         font.setPointSize(10);
         tabWidget->setFont(font);
@@ -84,6 +87,12 @@ public:
         tabWidget->addTab(ScheduleTab, icon, QString());
         RecordTab = new QWidget();
         RecordTab->setObjectName(QStringLiteral("RecordTab"));
+        titleEdit = new QTextEdit(RecordTab);
+        titleEdit->setObjectName(QStringLiteral("titleEdit"));
+        titleEdit->setGeometry(QRect(150, 40, 331, 71));
+        remarkEdit = new QTextEdit(RecordTab);
+        remarkEdit->setObjectName(QStringLiteral("remarkEdit"));
+        remarkEdit->setGeometry(QRect(150, 150, 331, 71));
         QIcon icon1;
         icon1.addFile(QStringLiteral(":/imgs/res/innerIcons/Universal Binary.png"), QSize(), QIcon::Active, QIcon::On);
         tabWidget->addTab(RecordTab, icon1, QString());
@@ -126,7 +135,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(2);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);

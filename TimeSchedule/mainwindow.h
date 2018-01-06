@@ -17,7 +17,7 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-
+    Ui::MainWindow * getUI();
 private:
     Ui::MainWindow *ui;
     void initScheduleCalendar();
@@ -27,6 +27,8 @@ private:
     int currentRowNum;
 public:
     void initProperties();
+    void setTabWidgetIndex(int n);
+    void setInformWidgetText(QString title, QString remarks);
 signals:
     void MissionUpdate(PMISSION mission);
     void MissionUpdateAll(QList<MISSION> missions);

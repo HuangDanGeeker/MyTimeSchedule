@@ -9,6 +9,10 @@
 #include <QTime>
 #include <dataaccessobject.h>
 #include <QProcess>
+#include <QTabWidget>
+namespace Ui {
+class MainWindow;
+}
 class TimeClock : public QObject
 {
     Q_OBJECT

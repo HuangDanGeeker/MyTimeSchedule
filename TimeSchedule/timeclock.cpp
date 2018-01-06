@@ -78,6 +78,8 @@ void TimeClock::checkInform(){
             if(QString::compare(missions[i].endDate, QDate::currentDate().toString(Qt::ISODate)) >= 0|| 0 == QString::compare(missions[i].endDate, "")){
                 if(QString::compare(currentTime, missions[i].infromTime) == 0){
                     qDebug()<<"infrom at time";
+                    mainWindow->setTabWidgetIndex(1);
+                    mainWindow->setInformWidgetText(missions[i].title, missions[i].remarks);
                     if(this->mainWindow->isHidden())
                         this->mainWindow->show();
                     else{
