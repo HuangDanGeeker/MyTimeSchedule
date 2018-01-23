@@ -74,6 +74,23 @@ void TimeClock::checkInform(){
     QString currentTime = currentHours + ":"+QString("%1").arg(minutes,2,10,QLatin1Char('0'));
 
     for(int i = 0; i < this->missions.size(); i++){
+        if(0 < QString::compare(missions[i].startDate, missions[i].endDate)){
+            if(QString::compare(missions[i].startDate, QDate::currentDate().toString(Qt::ISODate)) == 0){
+                if(QString::compare(currentTime, missions[i].infromTime) == 0){
+                    qDebug()<<"infrom at time";
+                    mainWindow->setTabWidgetIndex(1);
+                    mainWindow->setInformWidgetText(missions[i].title, missions[i].remarks);
+                    if(this->mainWindow->isHidden())
+                        this->mainWindow->show();
+                    else{
+                        this->mainWindow->hide();
+                        Sleep(800);
+                        this->mainWindow->show();
+                    }
+                }
+            }
+            continue;
+        }
         if(QString::compare(missions[i].startDate, QDate::currentDate().toString(Qt::ISODate)) <= 0|| 0 == QString::compare(missions[i].startDate, "")){
             if(QString::compare(missions[i].endDate, QDate::currentDate().toString(Qt::ISODate)) >= 0|| 0 == QString::compare(missions[i].endDate, "")){
                 if(QString::compare(currentTime, missions[i].infromTime) == 0){
