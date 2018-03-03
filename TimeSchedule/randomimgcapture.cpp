@@ -27,6 +27,9 @@ RandomImgCapture::RandomImgCapture(QWidget *parent) :
     captureTimer->start(60000 * 60);
 
     isSaved = false;
+
+    appPath = QApplication::applicationDirPath();
+    appPath = appPath.replace("/", "\\");
 }
 
 RandomImgCapture::~RandomImgCapture()
@@ -37,7 +40,8 @@ RandomImgCapture::~RandomImgCapture()
 
 void RandomImgCapture::save(){
     const QPixmap *pixmap = ui->imageLabel->pixmap();
-    qDebug()<<"capture saved :"<<pixmap->save("./CapturedImgs/"+QDate::currentDate().toString("yy_MM_dd_")+QTime::currentTime().toString("hhmmss")+".jpg", "JPG");
+    qDebug()<<appPath+"/CapturedImgs/"+QDate::currentDate().toString("yy_MM_dd_")+QTime::currentTime().toString("hhmmss")+".jpg";
+    qDebug()<<"capture saved :"<<pixmap->save(appPath+"/CapturedImgs/"+QDate::currentDate().toString("yy_MM_dd_")+QTime::currentTime().toString("hhmmss")+".jpg", "JPG");
     this->hide();
     autoSaveTimer->stop();
 }
@@ -67,7 +71,8 @@ void RandomImgCapture::startCapture(){
 
 void RandomImgCapture::autoSave(){
     const QPixmap *pixmap = ui->imageLabel->pixmap();
-    qDebug()<<"capture saved :"<<pixmap->save("./CapturedImgs/"+QDate::currentDate().toString("yy_MM_dd_")+QTime::currentTime().toString("hhmmss")+".jpg", "JPG");
+    qDebug()<<appPath+"/CapturedImgs/"+QDate::currentDate().toString("yy_MM_dd_")+QTime::currentTime().toString("hhmmss")+".jpg";
+    qDebug()<<"capture saved :"<<pixmap->save(appPath+"/CapturedImgs/"+QDate::currentDate().toString("yy_MM_dd_")+QTime::currentTime().toString("hhmmss")+".jpg", "JPG");
     this->hide();
     autoSaveTimer->stop();
 }

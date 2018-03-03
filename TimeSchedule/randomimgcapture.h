@@ -30,6 +30,7 @@ private:
     int flag = 0;
     int fibonacci[12] = {1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144};
     bool isSaved;
+    QString appPath;
 private slots:
     void save();
     void notSave();
